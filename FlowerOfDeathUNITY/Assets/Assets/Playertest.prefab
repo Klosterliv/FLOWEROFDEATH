@@ -164,8 +164,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 438050}
-  movespeed: 800
-  jumpforce: 0
+  movespeed: 2000
+  jumpforce: 1000
   glidematerial: {fileID: 13400000, guid: 5a548ea8e8c43414292f6f2a9749f6c9, type: 2}
   runmaterial: {fileID: 13400000, guid: c3bc59e830f8e22428d7c33d9eca50c5, type: 2}
   jumpcooldown: .25
