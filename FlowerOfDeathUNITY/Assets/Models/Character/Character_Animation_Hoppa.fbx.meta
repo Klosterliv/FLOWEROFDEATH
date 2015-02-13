@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: 8ca0b0d2b63157246bd46cc26c8f44d0
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Karakt__r_Hopp:chest_joint
+    100004: Karakt__r_Hopp:Group55036
+    100006: Karakt__r_Hopp:head_joint
+    100008: Karakt__r_Hopp:head_tip_joint
+    100010: Karakt__r_Hopp:hip_ctrl
+    100012: Karakt__r_Hopp:horns_mod
+    100014: Karakt__r_Hopp:l_arm_joint
+    100016: Karakt__r_Hopp:l_elbow_joint
+    100018: Karakt__r_Hopp:l_eye_joint
+    100020: Karakt__r_Hopp:l_finger_joint
+    100022: Karakt__r_Hopp:l_foot_joint
+    100024: Karakt__r_Hopp:l_hand_joint
+    100026: Karakt__r_Hopp:l_hand_tip_joint
+    100028: Karakt__r_Hopp:l_knee_joint
+    100030: Karakt__r_Hopp:l_leg_joint
+    100032: Karakt__r_Hopp:l_leg_tip_joint
+    100034: Karakt__r_Hopp:l_shoulder_joint
+    100036: Karakt__r_Hopp:l_thumb_base_joint
+    100038: Karakt__r_Hopp:l_thumb_joint
+    100040: Karakt__r_Hopp:l_thumb_tip_joint
+    100042: Karakt__r_Hopp:l_wrist_joint
+    100044: Karakt__r_Hopp:master_ctrl
+    100046: Karakt__r_Hopp:neck_joint
+    100048: Karakt__r_Hopp:pCylinder3
+    100050: Karakt__r_Hopp:pCylinder4
+    100052: Karakt__r_Hopp:r_arm_joint
+    100054: Karakt__r_Hopp:r_elbow_joint
+    100056: Karakt__r_Hopp:r_eye_joint
+    100058: Karakt__r_Hopp:r_fingers_joint
+    100060: Karakt__r_Hopp:r_foot_joint
+    100062: Karakt__r_Hopp:r_hand_joint
+    100064: Karakt__r_Hopp:r_hand_tip_joint
+    100066: Karakt__r_Hopp:r_knee_joint
+    100068: Karakt__r_Hopp:r_leg_joint
+    100070: Karakt__r_Hopp:r_leg_tip_joint
+    100072: Karakt__r_Hopp:r_shoulder_joint
+    100074: Karakt__r_Hopp:r_thumb_base_joint
+    100076: Karakt__r_Hopp:r_thumb_joint
+    100078: Karakt__r_Hopp:r_thumb_tip_joint
+    100080: Karakt__r_Hopp:r_wrist_joint
+    100082: Karakt__r_Hopp:root_joint
+    100084: Karakt__r_Hopp:waist_jonint
+    400000: //RootNode
+    400002: Karakt__r_Hopp:chest_joint
+    400004: Karakt__r_Hopp:Group55036
+    400006: Karakt__r_Hopp:head_joint
+    400008: Karakt__r_Hopp:head_tip_joint
+    400010: Karakt__r_Hopp:hip_ctrl
+    400012: Karakt__r_Hopp:horns_mod
+    400014: Karakt__r_Hopp:l_arm_joint
+    400016: Karakt__r_Hopp:l_elbow_joint
+    400018: Karakt__r_Hopp:l_eye_joint
+    400020: Karakt__r_Hopp:l_finger_joint
+    400022: Karakt__r_Hopp:l_foot_joint
+    400024: Karakt__r_Hopp:l_hand_joint
+    400026: Karakt__r_Hopp:l_hand_tip_joint
+    400028: Karakt__r_Hopp:l_knee_joint
+    400030: Karakt__r_Hopp:l_leg_joint
+    400032: Karakt__r_Hopp:l_leg_tip_joint
+    400034: Karakt__r_Hopp:l_shoulder_joint
+    400036: Karakt__r_Hopp:l_thumb_base_joint
+    400038: Karakt__r_Hopp:l_thumb_joint
+    400040: Karakt__r_Hopp:l_thumb_tip_joint
+    400042: Karakt__r_Hopp:l_wrist_joint
+    400044: Karakt__r_Hopp:master_ctrl
+    400046: Karakt__r_Hopp:neck_joint
+    400048: Karakt__r_Hopp:pCylinder3
+    400050: Karakt__r_Hopp:pCylinder4
+    400052: Karakt__r_Hopp:r_arm_joint
+    400054: Karakt__r_Hopp:r_elbow_joint
+    400056: Karakt__r_Hopp:r_eye_joint
+    400058: Karakt__r_Hopp:r_fingers_joint
+    400060: Karakt__r_Hopp:r_foot_joint
+    400062: Karakt__r_Hopp:r_hand_joint
+    400064: Karakt__r_Hopp:r_hand_tip_joint
+    400066: Karakt__r_Hopp:r_knee_joint
+    400068: Karakt__r_Hopp:r_leg_joint
+    400070: Karakt__r_Hopp:r_leg_tip_joint
+    400072: Karakt__r_Hopp:r_shoulder_joint
+    400074: Karakt__r_Hopp:r_thumb_base_joint
+    400076: Karakt__r_Hopp:r_thumb_joint
+    400078: Karakt__r_Hopp:r_thumb_tip_joint
+    400080: Karakt__r_Hopp:r_wrist_joint
+    400082: Karakt__r_Hopp:root_joint
+    400084: Karakt__r_Hopp:waist_jonint
+    4300000: Karakt__r_Hopp:horns_mod
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Karakt__r_Hopp:horns_mod
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
