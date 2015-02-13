@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
     public Transform player;
+    public Transform playerModel;
 
     public AnimationCurve groundDistanceFactor;
     public AnimationCurve accelerationFactorBySpeed;
@@ -30,15 +31,20 @@ public class PlayerMovement : MonoBehaviour {
 
     Vector3 upDir;
     float minDist = 500f;
+    Animator animator;
 
     // Use this for initialization
     void Start() {
         upDir = new Vector3(0, 0, 0);
+        animator = (Animator)playerModel.GetComponent(typeof(Animator));
+        playerModel.transform.position = transform.position;
 
     }
 
     // Update is called once per frame
     void Update() {
+
+        AnimUpdate();
 
         Footing();
         Jump();
@@ -48,6 +54,11 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate() {
         Move();
         Float();
+    }
+
+    void AnimUpdate() {
+        animator.SetFloat("speed", player.rigidbody.velocity.magnitude);
+        animator.SetBool("glide", glide);
     }
 
     void Move() {
