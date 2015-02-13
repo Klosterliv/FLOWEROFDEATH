@@ -1,0 +1,740 @@
+fileFormatVersion: 2
+guid: 4b8483dd9e3dcf24b861a52985c9f8f7
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Karakt__r_Glida:chest_joint
+    100004: Karakt__r_Glida:Group55036
+    100006: Karakt__r_Glida:head_joint
+    100008: Karakt__r_Glida:head_tip_joint
+    100010: Karakt__r_Glida:hip_ctrl
+    100012: Karakt__r_Glida:horns_mod
+    100014: Karakt__r_Glida:l_arm_joint
+    100016: Karakt__r_Glida:l_elbow_joint
+    100018: Karakt__r_Glida:l_eye_joint
+    100020: Karakt__r_Glida:l_finger_joint
+    100022: Karakt__r_Glida:l_foot_joint
+    100024: Karakt__r_Glida:l_hand_joint
+    100026: Karakt__r_Glida:l_hand_tip_joint
+    100028: Karakt__r_Glida:l_knee_joint
+    100030: Karakt__r_Glida:l_leg_joint
+    100032: Karakt__r_Glida:l_leg_tip_joint
+    100034: Karakt__r_Glida:l_shoulder_joint
+    100036: Karakt__r_Glida:l_thumb_base_joint
+    100038: Karakt__r_Glida:l_thumb_joint
+    100040: Karakt__r_Glida:l_thumb_tip_joint
+    100042: Karakt__r_Glida:l_wrist_joint
+    100044: Karakt__r_Glida:master_ctrl
+    100046: Karakt__r_Glida:neck_joint
+    100048: Karakt__r_Glida:pCylinder3
+    100050: Karakt__r_Glida:pCylinder4
+    100052: Karakt__r_Glida:r_arm_joint
+    100054: Karakt__r_Glida:r_elbow_joint
+    100056: Karakt__r_Glida:r_eye_joint
+    100058: Karakt__r_Glida:r_fingers_joint
+    100060: Karakt__r_Glida:r_foot_joint
+    100062: Karakt__r_Glida:r_hand_joint
+    100064: Karakt__r_Glida:r_hand_tip_joint
+    100066: Karakt__r_Glida:r_knee_joint
+    100068: Karakt__r_Glida:r_leg_joint
+    100070: Karakt__r_Glida:r_leg_tip_joint
+    100072: Karakt__r_Glida:r_shoulder_joint
+    100074: Karakt__r_Glida:r_thumb_base_joint
+    100076: Karakt__r_Glida:r_thumb_joint
+    100078: Karakt__r_Glida:r_thumb_tip_joint
+    100080: Karakt__r_Glida:r_wrist_joint
+    100082: Karakt__r_Glida:root_joint
+    100084: Karakt__r_Glida:waist_jonint
+    400000: //RootNode
+    400002: Karakt__r_Glida:chest_joint
+    400004: Karakt__r_Glida:Group55036
+    400006: Karakt__r_Glida:head_joint
+    400008: Karakt__r_Glida:head_tip_joint
+    400010: Karakt__r_Glida:hip_ctrl
+    400012: Karakt__r_Glida:horns_mod
+    400014: Karakt__r_Glida:l_arm_joint
+    400016: Karakt__r_Glida:l_elbow_joint
+    400018: Karakt__r_Glida:l_eye_joint
+    400020: Karakt__r_Glida:l_finger_joint
+    400022: Karakt__r_Glida:l_foot_joint
+    400024: Karakt__r_Glida:l_hand_joint
+    400026: Karakt__r_Glida:l_hand_tip_joint
+    400028: Karakt__r_Glida:l_knee_joint
+    400030: Karakt__r_Glida:l_leg_joint
+    400032: Karakt__r_Glida:l_leg_tip_joint
+    400034: Karakt__r_Glida:l_shoulder_joint
+    400036: Karakt__r_Glida:l_thumb_base_joint
+    400038: Karakt__r_Glida:l_thumb_joint
+    400040: Karakt__r_Glida:l_thumb_tip_joint
+    400042: Karakt__r_Glida:l_wrist_joint
+    400044: Karakt__r_Glida:master_ctrl
+    400046: Karakt__r_Glida:neck_joint
+    400048: Karakt__r_Glida:pCylinder3
+    400050: Karakt__r_Glida:pCylinder4
+    400052: Karakt__r_Glida:r_arm_joint
+    400054: Karakt__r_Glida:r_elbow_joint
+    400056: Karakt__r_Glida:r_eye_joint
+    400058: Karakt__r_Glida:r_fingers_joint
+    400060: Karakt__r_Glida:r_foot_joint
+    400062: Karakt__r_Glida:r_hand_joint
+    400064: Karakt__r_Glida:r_hand_tip_joint
+    400066: Karakt__r_Glida:r_knee_joint
+    400068: Karakt__r_Glida:r_leg_joint
+    400070: Karakt__r_Glida:r_leg_tip_joint
+    400072: Karakt__r_Glida:r_shoulder_joint
+    400074: Karakt__r_Glida:r_thumb_base_joint
+    400076: Karakt__r_Glida:r_thumb_joint
+    400078: Karakt__r_Glida:r_thumb_tip_joint
+    400080: Karakt__r_Glida:r_wrist_joint
+    400082: Karakt__r_Glida:root_joint
+    400084: Karakt__r_Glida:waist_jonint
+    4300000: Karakt__r_Glida:horns_mod
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Karakt__r_Glida:horns_mod
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Karakt__r_Glida:Group55036
+        weight: 0
+      - path: Karakt__r_Glida:Group55036/Karakt__r_Glida:pCylinder3
+        weight: 0
+      - path: Karakt__r_Glida:Group55036/Karakt__r_Glida:pCylinder4
+        weight: 0
+      - path: Karakt__r_Glida:horns_mod
+        weight: 0
+      - path: Karakt__r_Glida:master_ctrl
+        weight: 0
+      - path: Karakt__r_Glida:master_ctrl/Karakt__r_Glida:hip_ctrl
+        weight: 0
+      - path: Karakt__r_Glida:root_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:l_leg_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:l_leg_joint/Karakt__r_Glida:l_knee_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:l_leg_joint/Karakt__r_Glida:l_knee_joint/Karakt__r_Glida:l_foot_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:l_leg_joint/Karakt__r_Glida:l_knee_joint/Karakt__r_Glida:l_foot_joint/Karakt__r_Glida:l_leg_tip_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:r_leg_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:r_leg_joint/Karakt__r_Glida:r_knee_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:r_leg_joint/Karakt__r_Glida:r_knee_joint/Karakt__r_Glida:r_foot_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:r_leg_joint/Karakt__r_Glida:r_knee_joint/Karakt__r_Glida:r_foot_joint/Karakt__r_Glida:r_leg_tip_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint/Karakt__r_Glida:l_arm_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint/Karakt__r_Glida:l_arm_joint/Karakt__r_Glida:l_elbow_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint/Karakt__r_Glida:l_arm_joint/Karakt__r_Glida:l_elbow_joint/Karakt__r_Glida:l_wrist_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint/Karakt__r_Glida:l_arm_joint/Karakt__r_Glida:l_elbow_joint/Karakt__r_Glida:l_wrist_joint/Karakt__r_Glida:l_hand_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint/Karakt__r_Glida:l_arm_joint/Karakt__r_Glida:l_elbow_joint/Karakt__r_Glida:l_wrist_joint/Karakt__r_Glida:l_hand_joint/Karakt__r_Glida:l_finger_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint/Karakt__r_Glida:l_arm_joint/Karakt__r_Glida:l_elbow_joint/Karakt__r_Glida:l_wrist_joint/Karakt__r_Glida:l_hand_joint/Karakt__r_Glida:l_finger_joint/Karakt__r_Glida:l_hand_tip_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint/Karakt__r_Glida:l_arm_joint/Karakt__r_Glida:l_elbow_joint/Karakt__r_Glida:l_wrist_joint/Karakt__r_Glida:l_thumb_base_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint/Karakt__r_Glida:l_arm_joint/Karakt__r_Glida:l_elbow_joint/Karakt__r_Glida:l_wrist_joint/Karakt__r_Glida:l_thumb_base_joint/Karakt__r_Glida:l_thumb_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:l_shoulder_joint/Karakt__r_Glida:l_arm_joint/Karakt__r_Glida:l_elbow_joint/Karakt__r_Glida:l_wrist_joint/Karakt__r_Glida:l_thumb_base_joint/Karakt__r_Glida:l_thumb_joint/Karakt__r_Glida:l_thumb_tip_joint
+        weight: 0
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:neck_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:neck_joint/Karakt__r_Glida:head_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:neck_joint/Karakt__r_Glida:head_joint/Karakt__r_Glida:head_tip_joint
+        weight: 0
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:neck_joint/Karakt__r_Glida:head_joint/Karakt__r_Glida:l_eye_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:neck_joint/Karakt__r_Glida:head_joint/Karakt__r_Glida:r_eye_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint/Karakt__r_Glida:r_arm_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint/Karakt__r_Glida:r_arm_joint/Karakt__r_Glida:r_elbow_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint/Karakt__r_Glida:r_arm_joint/Karakt__r_Glida:r_elbow_joint/Karakt__r_Glida:r_wrist_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint/Karakt__r_Glida:r_arm_joint/Karakt__r_Glida:r_elbow_joint/Karakt__r_Glida:r_wrist_joint/Karakt__r_Glida:r_hand_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint/Karakt__r_Glida:r_arm_joint/Karakt__r_Glida:r_elbow_joint/Karakt__r_Glida:r_wrist_joint/Karakt__r_Glida:r_hand_joint/Karakt__r_Glida:r_fingers_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint/Karakt__r_Glida:r_arm_joint/Karakt__r_Glida:r_elbow_joint/Karakt__r_Glida:r_wrist_joint/Karakt__r_Glida:r_hand_joint/Karakt__r_Glida:r_fingers_joint/Karakt__r_Glida:r_hand_tip_joint
+        weight: 0
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint/Karakt__r_Glida:r_arm_joint/Karakt__r_Glida:r_elbow_joint/Karakt__r_Glida:r_wrist_joint/Karakt__r_Glida:r_thumb_base_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint/Karakt__r_Glida:r_arm_joint/Karakt__r_Glida:r_elbow_joint/Karakt__r_Glida:r_wrist_joint/Karakt__r_Glida:r_thumb_base_joint/Karakt__r_Glida:r_thumb_joint
+        weight: 1
+      - path: Karakt__r_Glida:root_joint/Karakt__r_Glida:waist_jonint/Karakt__r_Glida:chest_joint/Karakt__r_Glida:r_shoulder_joint/Karakt__r_Glida:r_arm_joint/Karakt__r_Glida:r_elbow_joint/Karakt__r_Glida:r_wrist_joint/Karakt__r_Glida:r_thumb_base_joint/Karakt__r_Glida:r_thumb_joint/Karakt__r_Glida:r_thumb_tip_joint
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Karakt__r_Glida:root_joint
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_leg_joint
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_leg_joint
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_knee_joint
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_knee_joint
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_foot_joint
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_foot_joint
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:waist_jonint
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:chest_joint
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:neck_joint
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:head_joint
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_shoulder_joint
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_shoulder_joint
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_arm_joint
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_arm_joint
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_elbow_joint
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_elbow_joint
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_wrist_joint
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_wrist_joint
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_leg_tip_joint
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_eye_joint
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_eye_joint
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_thumb_base_joint
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_thumb_joint
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_hand_joint
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_finger_joint
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:l_hand_tip_joint
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_thumb_base_joint
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_thumb_joint
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_thumb_tip_joint
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_hand_joint
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_fingers_joint
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_Glida:r_leg_tip_joint
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Character_Animation_Glida(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:Group55036
+      position: {x: .0787552595, y: .0399999991, z: .000692608941}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:pCylinder3
+      position: {x: .0727204084, y: .0343103223, z: .00961050298}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: .80215764, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:pCylinder4
+      position: {x: .0727204084, y: .0343103223, z: .00961050298}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: .80215764, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:horns_mod
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:master_ctrl
+      position: {x: 0, y: .016530836, z: -.044744201}
+      rotation: {x: .730044603, y: 0, z: 0, w: .683399498}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:hip_ctrl
+      position: {x: 8.89959265e-05, y: .0335991681, z: .00354311755}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:root_joint
+      position: {x: -.000601655105, y: .0341069624, z: -.00415416807}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_leg_joint
+      position: {x: -.00506844511, y: -.00523267267, z: .00433210982}
+      rotation: {x: -.320058227, y: -.646612048, z: -.231369078, w: .652628481}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_knee_joint
+      position: {x: -.00271217455, y: -.0110907992, z: -.0064017782}
+      rotation: {x: 1.93910452e-08, y: 7.30040162e-09, z: -1.90904128e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_foot_joint
+      position: {x: -.00529842777, y: -.0110483663, z: -.00647757156}
+      rotation: {x: .0473007075, y: .386921078, z: .407482326, w: .825840771}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_leg_tip_joint
+      position: {x: -.000366579683, y: -.00306538795, z: -.00221942528}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_leg_joint
+      position: {x: .00627175532, y: -.00562936673, z: .00397622585}
+      rotation: {x: -.232707754, y: .935195506, z: .157054678, w: -.215848073}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_knee_joint
+      position: {x: .00303543825, y: -.0122219278, z: -.0029653844}
+      rotation: {x: -1.17126334e-07, y: -4.50866722e-08, z: -3.0346655e-08, w: 1}
+      scale: {x: .999999583, y: .999999762, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_foot_joint
+      position: {x: .00248859008, y: -.0136400554, z: -.00130863441}
+      rotation: {x: .326695532, y: -.54704988, z: -.125530288, w: .760426641}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_leg_tip_joint
+      position: {x: .00109574059, y: -.0037240393, z: -.00108420197}
+      rotation: {x: 4.82553153e-09, y: 5.73645506e-11, z: 9.41123512e-10, w: 1}
+      scale: {x: 1.00000012, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Karakt__r_Glida:waist_jonint
+      position: {x: .000426468352, y: .00932499208, z: .00182572042}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:chest_joint
+      position: {x: -.000426468352, y: .0118088461, z: .000779095339}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_shoulder_joint
+      position: {x: -.00200490584, y: .00895390753, z: -.00144406944}
+      rotation: {x: 2.91038305e-09, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_arm_joint
+      position: {x: -.00606794422, y: -.000697235577, z: -.000293157384}
+      rotation: {x: .377557009, y: -.0211238265, z: .000899655803, w: .925744951}
+      scale: {x: 1, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_elbow_joint
+      position: {x: -.00803835504, y: .000255168707, z: -.000257633365}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_wrist_joint
+      position: {x: -.00864495058, y: .000823543349, z: .000145007856}
+      rotation: {x: .106505416, y: -.00692425109, z: .000780026137, w: .994287729}
+      scale: {x: .99999994, y: 1.00000012, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_hand_joint
+      position: {x: -.0020703841, y: .000169299965, z: -.00024652225}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_finger_joint
+      position: {x: -.00106315687, y: .000186596269, z: 5.60277203e-06}
+      rotation: {x: .000866916846, y: .00533481175, z: -.0131626837, w: .999898791}
+      scale: {x: .99999994, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_hand_tip_joint
+      position: {x: -.00143726356, y: .000103286678, z: -5.2797277e-05}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: .99999994, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_thumb_base_joint
+      position: {x: -.00112737401, y: .000672644353, z: -.000453252898}
+      rotation: {x: .273688108, y: .302181691, z: -.0145262927, w: .913000584}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_thumb_joint
+      position: {x: -.000604224624, y: .000524968433, z: -.000463434262}
+      rotation: {x: -.0345458053, y: .0681101531, z: .12219362, w: .989563704}
+      scale: {x: .99999994, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_thumb_tip_joint
+      position: {x: -.000368545967, y: .000786446384, z: -.000542555586}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:neck_joint
+      position: {x: 2.56739078e-18, y: .00991780777, z: -.00118448702}
+      rotation: {x: 2.32830644e-08, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:head_joint
+      position: {x: 9.85333823e-19, y: .0100142164, z: -.00144382485}
+      rotation: {x: -2.32830644e-08, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_Glida:head_tip_joint
+      position: {x: 2.8700024e-18, y: .00842021126, z: -.000759907824}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:l_eye_joint
+      position: {x: .00232368335, y: .00485269213, z: .00718172779}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_eye_joint
+      position: {x: -.00244387379, y: .00485269213, z: .00718172779}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_shoulder_joint
+      position: {x: .00209713844, y: .00895390753, z: -.00246461271}
+      rotation: {x: 2.91038305e-09, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_arm_joint
+      position: {x: .00595700974, y: -.000684182392, z: .000762077805}
+      rotation: {x: -.363342822, y: -.0324482061, z: -.00572071038, w: .931072772}
+      scale: {x: .99999994, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_elbow_joint
+      position: {x: .00791965798, y: .000761349162, z: -.000212865125}
+      rotation: {x: -.00145546696, y: .0181485042, z: .0173588004, w: .999683559}
+      scale: {x: 1.00000012, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_wrist_joint
+      position: {x: .00921695959, y: .000498644891, z: .000231873943}
+      rotation: {x: .0801954567, y: .00844438653, z: .0024394514, w: .99674046}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_hand_joint
+      position: {x: .00141157524, y: .000103262253, z: 4.84314041e-05}
+      rotation: {x: -5.14600615e-05, y: .00050965097, z: -.00349879148, w: .999993801}
+      scale: {x: 1, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_fingers_joint
+      position: {x: .00103088364, y: .000179295661, z: 1.09316734e-05}
+      rotation: {x: -.0101537025, y: .053231623, z: .0844555572, w: .994952559}
+      scale: {x: 1, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_hand_tip_joint
+      position: {x: .00174024992, y: -.000106103464, z: .000276098493}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_thumb_base_joint
+      position: {x: .00086259353, y: .000498523179, z: .000621872838}
+      rotation: {x: .411840618, y: .227065802, z: -.356396735, w: .807347417}
+      scale: {x: 1, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_thumb_joint
+      position: {x: .000142254852, y: .000670345791, z: .00059147377}
+      rotation: {x: .0450636856, y: -.0210044496, z: .0129672447, w: .998679101}
+      scale: {x: 1, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_Glida:r_thumb_tip_joint
+      position: {x: .000178511851, y: .000622804859, z: .000388458546}
+      rotation: {x: 1.1288928e-08, y: 4.73036166e-10, z: -3.33288369e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
