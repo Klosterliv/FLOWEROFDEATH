@@ -90,7 +90,7 @@ ModelImporter:
     400082: Karakt__r_G__:root_joint
     400084: Karakt__r_G__:waist_jonint
     4300000: Karakt__r_G__:horns_mod
-    7400000: Take 001
+    7400000: Walk
     9500000: //RootNode
     13700000: Karakt__r_G__:horns_mod
   materials:
@@ -102,7 +102,7 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -110,7 +110,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Walk
       takeName: Take 001
       firstFrame: 1
       lastFrame: 23
@@ -120,13 +120,13 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
+      keepOriginalPositionXZ: 1
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
@@ -245,8 +245,487 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human: []
-    skeleton: []
+    human:
+    - boneName: Karakt__r_G__:root_joint
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_leg_joint
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_leg_joint
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_knee_joint
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_knee_joint
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_foot_joint
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_foot_joint
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:waist_jonint
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:chest_joint
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:neck_joint
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:head_joint
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_shoulder_joint
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_shoulder_joint
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_arm_joint
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_arm_joint
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_elbow_joint
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_elbow_joint
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_wrist_joint
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_wrist_joint
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_leg_tip_joint
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_eye_joint
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_eye_joint
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_thumb_base_joint
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_thumb_joint
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_hand_joint
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_finger_joint
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:l_hand_tip_joint
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_thumb_base_joint
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_thumb_joint
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_thumb_tip_joint
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_hand_joint
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_fingers_joint
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Karakt__r_G__:r_leg_tip_joint
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: "Character_Animation_G\xE5(Clone)"
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:Group55036
+      position: {x: .0787552595, y: .0399999991, z: .000692608941}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:pCylinder3
+      position: {x: .0727204084, y: .0343103223, z: .00961050298}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: .80215764, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:pCylinder4
+      position: {x: .0727204084, y: .0343103223, z: .00961050298}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: .80215764, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:horns_mod
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:master_ctrl
+      position: {x: 0, y: -.0046908888, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:hip_ctrl
+      position: {x: 8.89959265e-05, y: .0320246555, z: .00354311755}
+      rotation: {x: 0, y: .11852067, z: -0, w: .992951572}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:root_joint
+      position: {x: -.000831445272, y: .0341069624, z: .00012048841}
+      rotation: {x: 0, y: -1.1641534e-08, z: 0, w: 1}
+      scale: {x: .999999881, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_G__:r_leg_joint
+      position: {x: .00627175532, y: -.00562936673, z: .00397622585}
+      rotation: {x: -.232707724, y: .935195506, z: .157054707, w: -.215848088}
+      scale: {x: .99999994, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_G__:r_knee_joint
+      position: {x: .00303543825, y: -.0122219278, z: -.0029653844}
+      rotation: {x: 5.17436298e-08, y: 3.73101798e-08, z: -8.78342945e-08, w: 1}
+      scale: {x: .999999642, y: 1.00000012, z: .999999702}
+      transformModified: 1
+    - name: Karakt__r_G__:r_foot_joint
+      position: {x: .00248859008, y: -.0136400554, z: -.00130863441}
+      rotation: {x: .326695532, y: -.54704982, z: -.125530094, w: .7604267}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:r_leg_tip_joint
+      position: {x: .00109574059, y: -.0037240393, z: -.00108420197}
+      rotation: {x: 4.82553997e-09, y: 5.73694356e-11, z: 9.41121514e-10, w: 1}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:l_leg_joint
+      position: {x: -.00506844511, y: -.00523267267, z: .00433210982}
+      rotation: {x: -.320058227, y: -.646612108, z: -.231369033, w: .652628481}
+      scale: {x: 1, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: Karakt__r_G__:l_knee_joint
+      position: {x: -.00271217455, y: -.0110907992, z: -.0064017782}
+      rotation: {x: -5.79160755e-08, y: -3.5763918e-08, z: -1.49014383e-08, w: 1}
+      scale: {x: 1, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: Karakt__r_G__:l_foot_joint
+      position: {x: -.00529842777, y: -.0110483663, z: -.00647757156}
+      rotation: {x: .0473006852, y: .386920959, z: .407482266, w: .825840831}
+      scale: {x: .99999994, y: 1, z: .999999702}
+      transformModified: 1
+    - name: Karakt__r_G__:l_leg_tip_joint
+      position: {x: -.000366579683, y: -.00306538795, z: -.00221942528}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:waist_jonint
+      position: {x: .000426468352, y: .00932499208, z: .00182572042}
+      rotation: {x: 0, y: 1.12777361e-08, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:chest_joint
+      position: {x: -.000426468352, y: .0118088461, z: .000779095339}
+      rotation: {x: 0, y: 5.55111512e-17, z: 0, w: 1}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:r_shoulder_joint
+      position: {x: .00209713844, y: .00895390753, z: -.00246461271}
+      rotation: {x: 0, y: -1.12777361e-08, z: 0, w: 1}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:r_arm_joint
+      position: {x: .00595700974, y: -.000684182392, z: .000762077805}
+      rotation: {x: -.363342822, y: -.0324482359, z: -.00572069455, w: .931072712}
+      scale: {x: .99999994, y: .999999821, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:r_elbow_joint
+      position: {x: .00791965798, y: .000761349162, z: -.000212865125}
+      rotation: {x: -.00145546591, y: .0181485601, z: .0173588488, w: .999683559}
+      scale: {x: .99999994, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: Karakt__r_G__:r_wrist_joint
+      position: {x: .00921695959, y: .000498644891, z: .000231873943}
+      rotation: {x: .0801954716, y: .00844436325, z: .00243940251, w: .996740401}
+      scale: {x: 1, y: .999999762, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:r_hand_joint
+      position: {x: .00141157524, y: .000103262253, z: 4.84314041e-05}
+      rotation: {x: -5.14896346e-05, y: .000509916223, z: -.00350040244, w: .999993801}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:r_fingers_joint
+      position: {x: .00103088364, y: .000179295661, z: 1.09316734e-05}
+      rotation: {x: -.010153803, y: .0532307848, z: .084456861, w: .9949525}
+      scale: {x: 1, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:r_hand_tip_joint
+      position: {x: .00174024992, y: -.000106103464, z: .000276098493}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:r_thumb_base_joint
+      position: {x: .00086259353, y: .000498523179, z: .000621872838}
+      rotation: {x: .411840558, y: .227065861, z: -.356396705, w: .807347417}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:r_thumb_joint
+      position: {x: .000142254852, y: .000670345791, z: .00059147377}
+      rotation: {x: .0450625159, y: -.0210037194, z: .0129666124, w: .998679221}
+      scale: {x: 1, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:r_thumb_tip_joint
+      position: {x: .000178511851, y: .000622804859, z: .000388458546}
+      rotation: {x: -5.58274434e-12, y: -1.28614364e-09, z: -8.75085115e-10, w: 1}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:l_shoulder_joint
+      position: {x: -.00200490584, y: .00895390753, z: -.00144406944}
+      rotation: {x: 0, y: -1.12777361e-08, z: 0, w: 1}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:l_arm_joint
+      position: {x: -.00606794422, y: -.000697235577, z: -.000293157384}
+      rotation: {x: .377557009, y: -.0211237967, z: .000899637002, w: .925744951}
+      scale: {x: 1, y: .999999821, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_G__:l_elbow_joint
+      position: {x: -.00803835504, y: .000255168707, z: -.000257633365}
+      rotation: {x: 7.6489981e-10, y: 1.87546103e-08, z: 3.11914441e-08, w: 1}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:l_wrist_joint
+      position: {x: -.00864495058, y: .000823543349, z: .000145007856}
+      rotation: {x: .106505476, y: -.00692425296, z: .00077996694, w: .994287729}
+      scale: {x: 1.00000012, y: 1.00000024, z: 1.00000024}
+      transformModified: 1
+    - name: Karakt__r_G__:l_hand_joint
+      position: {x: -.0020703841, y: .000169299965, z: -.00024652225}
+      rotation: {x: 3.21444672e-12, y: 5.51793368e-11, z: 1.02456876e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:l_finger_joint
+      position: {x: -.00106315687, y: .000186596269, z: 5.60277203e-06}
+      rotation: {x: .000866937859, y: .00533433678, z: -.0131638115, w: .999898732}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:l_hand_tip_joint
+      position: {x: -.00143726356, y: .000103286678, z: -5.2797277e-05}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:l_thumb_base_joint
+      position: {x: -.00112737401, y: .000672644353, z: -.000453252898}
+      rotation: {x: .273688048, y: .302181631, z: -.0145262703, w: .913000643}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:l_thumb_joint
+      position: {x: -.000604224624, y: .000524968433, z: -.000463434262}
+      rotation: {x: -.0345454514, y: .0681099519, z: .122192934, w: .989563823}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:l_thumb_tip_joint
+      position: {x: -.000368545967, y: .000786446384, z: -.000542555586}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Karakt__r_G__:neck_joint
+      position: {x: 2.56739078e-18, y: .00991780777, z: -.00118448702}
+      rotation: {x: 0, y: 5.55111512e-17, z: 0, w: 1}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:head_joint
+      position: {x: 9.85333823e-19, y: .0100142164, z: -.00144382485}
+      rotation: {x: 0, y: 5.55111512e-17, z: 0, w: 1}
+      scale: {x: 1.00000012, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Karakt__r_G__:head_tip_joint
+      position: {x: 2.8700024e-18, y: .00842021126, z: -.000759907824}
+      rotation: {x: 0, y: 5.55111512e-17, z: 0, w: 1}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:l_eye_joint
+      position: {x: .00232368335, y: .00485269213, z: .00718172779}
+      rotation: {x: 0, y: 5.55111512e-17, z: 0, w: 1}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Karakt__r_G__:r_eye_joint
+      position: {x: -.00244387379, y: .00485269213, z: .00718172779}
+      rotation: {x: 0, y: 5.55111512e-17, z: 0, w: 1}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -256,6 +735,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   additionalBone: 0
   userData: 

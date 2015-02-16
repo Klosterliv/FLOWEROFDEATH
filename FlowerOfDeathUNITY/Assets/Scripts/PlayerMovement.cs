@@ -33,18 +33,24 @@ public class PlayerMovement : MonoBehaviour {
     float minDist = 500f;
     Animator animator;
 
+    Vector3 cameraDir;
+    Vector3 dir;
+
     // Use this for initialization
     void Start() {
         upDir = new Vector3(0, 0, 0);
         animator = (Animator)playerModel.GetComponent(typeof(Animator));
-        playerModel.transform.position = transform.position;
+        //playerModel.transform.position = transform.position;
+
+        cameraDir = new Vector3(0, 0, 0);
+        dir = new Vector3(0, 0, 0);
 
     }
 
     // Update is called once per frame
     void Update() {
 
-        AnimUpdate();
+        //AnimUpdate();
 
         Footing();
         Jump();
@@ -52,13 +58,28 @@ public class PlayerMovement : MonoBehaviour {
 
     }
     void FixedUpdate() {
+
+        Debug.Log(player.rigidbody.velocity.magnitude);
+
         Move();
         Float();
+    }
+    void LateUpdate() {
+        AnimUpdate();
     }
 
     void AnimUpdate() {
         animator.SetFloat("speed", player.rigidbody.velocity.magnitude);
-        animator.SetBool("glide", glide);
+        animator.SetBool("gliding", glide);
+
+        Vector3 looktarget = (playerModel.position + player.rigidbody.velocity/*dir*/) - playerModel.position;
+
+        playerModel.rotation = Quaternion.Slerp(playerModel.rotation, Quaternion.LookRotation(looktarget), Time.deltaTime*player.rigidbody.velocity.magnitude);
+        //playerModel.rotation
+        //playerModel.rotation = Quaternion.Lo
+        //playerModel.rotation.SetLookRotation(dir, Vector3.up);
+        //playerModel.LookAt(playerModel.position + dir*10);
+        //playerModel.rotation = Quaternion.LookRotation(dir, upDir);
     }
 
     void Move() {
@@ -67,41 +88,64 @@ public class PlayerMovement : MonoBehaviour {
         float movex = Input.GetAxis("Horizontal");
         float movez = Input.GetAxis("Vertical");
 
-        Vector3 move = player.forward * movex + -player.right * movez;
+        //Vector3 move = player.forward * movex + -player.right * movez;
+        Vector3 vertical = Vector3.Cross(cameraDir, Vector3.up);
+        Vector3 move = cameraDir * -movex + -vertical* movez;
         move = Vector3.Cross(move, upDir);
 
         // CLAMP FOR ANALOG
         move = Vector3.ClampMagnitude(move, 1f);        
         
 
-        Debug.DrawRay(player.position, move * 200, Color.black, 0.1f);
+        //Debug.DrawRay(player.position, move * 200, Color.black, 0.1f);
         // SPEED
         move *= (Time.fixedDeltaTime * movespeed);
 
-        // DOT PRODUCT MAX SPEED
+        // DOT PRODUCT
         float dot = Vector3.Dot(move.normalized, player.rigidbody.velocity.normalized);
-        float v = player.rigidbody.velocity.magnitude;
-        float dotv = dot * v;
 
-        float vFactor = accelerationFactorBySpeed.Evaluate(dotv/maxSpeed);
-
-        move *= vFactor;
 
         // GLIDE FACTORS
         if (glide) {
-            
-            move = Vector3.Lerp(move, Vector3.zero, (dot+0.2f));
 
+            float dotAbs = Mathf.Abs(dot);//Mathf.Abs(Vector3.Dot(move.normalized, player.rigidbody.velocity.normalized));
+            float brakeFactor = 1 - dotAbs;
+
+            player.rigidbody.AddForce(-player.rigidbody.velocity * dotAbs * 2);
+            player.rigidbody.AddForce(move.normalized * player.rigidbody.velocity.magnitude * dotAbs * 2);
+
+            Debug.DrawRay(player.position, -player.rigidbody.velocity.normalized * dotAbs * 2, Color.red);
+            Debug.DrawRay(player.position, move.normalized * dotAbs * 2, Color.blue);
+            
+            //if (dot < 0) Debug.Log(Vector3.Lerp(move, Vector3.zero, (dot + 0.2f)));
+            // move = Vector3.Lerp(move, Vector3.zero, (dot+0.2f));
+            
             move *= glidemovefactor;
 
+            dir = move;
+            return;
+
         }
+        // DOT PRODUCT MAX SPEED 
+
+        float v = player.rigidbody.velocity.magnitude;
+        float dotv = dot * v;
+
+        float vFactor = accelerationFactorBySpeed.Evaluate(dotv / maxSpeed);
+
+        move *= vFactor;
+
         // OTHER FACTORS
         move *= groundDistanceFactor.Evaluate(minDist);
 
         // APPLY
         player.rigidbody.AddForce(move);
 
-        Debug.Log("minDist:" + minDist + ", moveforce:" + move + ", moveSpeed:" + player.rigidbody.velocity.magnitude + ", dot:" + dot);
+        //Debug.DrawRay(player.position, move * 200, Color.black, 0.1f);
+
+        dir = move;
+
+        //Debug.Log("minDist:" + minDist + ", moveforce:" + move + ", moveSpeed:" + player.rigidbody.velocity.magnitude + ", dot:" + dot);
 
     }
 
@@ -193,6 +237,11 @@ public class PlayerMovement : MonoBehaviour {
         if (floatEngaged) {
             player.rigidbody.AddForce(Vector3.up * floatforce);
         }
+    }
+
+    public void SetCameraDir(Vector3 camDir) {
+        cameraDir = camDir;
+        
     }
 
 }
