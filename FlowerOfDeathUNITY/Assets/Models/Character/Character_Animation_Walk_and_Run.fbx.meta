@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: f040084428ccdb74da0ea920c8e16378
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: chest_joint
+    100004: head_joint
+    100006: head_tip_joint
+    100008: hip_ctrl
+    100010: horns_mod
+    100012: l_arm_joint
+    100014: l_elbow_joint
+    100016: l_eye_joint
+    100018: l_finger_joint
+    100020: l_foot_joint
+    100022: l_hand_joint
+    100024: l_hand_tip_joint
+    100026: l_knee_joint
+    100028: l_leg_joint
+    100030: l_leg_tip_joint
+    100032: l_shoulder_joint
+    100034: l_thumb_base_joint
+    100036: l_thumb_joint
+    100038: l_thumb_tip_joint
+    100040: l_wrist_joint
+    100042: master_ctrl
+    100044: neck_joint
+    100046: r_arm_joint
+    100048: r_elbow_joint
+    100050: r_eye_joint
+    100052: r_fingers_joint
+    100054: r_foot_joint
+    100056: r_hand_joint
+    100058: r_hand_tip_joint
+    100060: r_knee_joint
+    100062: r_leg_joint
+    100064: r_leg_tip_joint
+    100066: r_shoulder_joint
+    100068: r_thumb_base_joint
+    100070: r_thumb_joint
+    100072: r_thumb_tip_joint
+    100074: r_wrist_joint
+    100076: root_joint
+    100078: waist_jonint
+    400000: //RootNode
+    400002: chest_joint
+    400004: head_joint
+    400006: head_tip_joint
+    400008: hip_ctrl
+    400010: horns_mod
+    400012: l_arm_joint
+    400014: l_elbow_joint
+    400016: l_eye_joint
+    400018: l_finger_joint
+    400020: l_foot_joint
+    400022: l_hand_joint
+    400024: l_hand_tip_joint
+    400026: l_knee_joint
+    400028: l_leg_joint
+    400030: l_leg_tip_joint
+    400032: l_shoulder_joint
+    400034: l_thumb_base_joint
+    400036: l_thumb_joint
+    400038: l_thumb_tip_joint
+    400040: l_wrist_joint
+    400042: master_ctrl
+    400044: neck_joint
+    400046: r_arm_joint
+    400048: r_elbow_joint
+    400050: r_eye_joint
+    400052: r_fingers_joint
+    400054: r_foot_joint
+    400056: r_hand_joint
+    400058: r_hand_tip_joint
+    400060: r_knee_joint
+    400062: r_leg_joint
+    400064: r_leg_tip_joint
+    400066: r_shoulder_joint
+    400068: r_thumb_base_joint
+    400070: r_thumb_joint
+    400072: r_thumb_tip_joint
+    400074: r_wrist_joint
+    400076: root_joint
+    400078: waist_jonint
+    4300000: horns_mod
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: horns_mod
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
