@@ -20,16 +20,19 @@ ModelImporter:
     2300004: pCube16
     2300006: pCube8
     2300008: pCylinder1
+    2300010: //RootNode
     3300000: pCube10
     3300002: pCube12
     3300004: pCube16
     3300006: pCube8
     3300008: pCylinder1
+    3300010: //RootNode
     4300000: pCylinder1
     4300002: pCube8
     4300004: pCube10
     4300006: pCube12
     4300008: pCube16
+    4300010: polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1

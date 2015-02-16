@@ -108,7 +108,119 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Karakt__r_G__:Group55036
+        weight: 1
+      - path: Karakt__r_G__:Group55036/Karakt__r_G__:pCylinder3
+        weight: 1
+      - path: Karakt__r_G__:Group55036/Karakt__r_G__:pCylinder4
+        weight: 1
+      - path: Karakt__r_G__:horns_mod
+        weight: 1
+      - path: Karakt__r_G__:master_ctrl
+        weight: 1
+      - path: Karakt__r_G__:master_ctrl/Karakt__r_G__:hip_ctrl
+        weight: 1
+      - path: Karakt__r_G__:root_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:l_leg_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:l_leg_joint/Karakt__r_G__:l_knee_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:l_leg_joint/Karakt__r_G__:l_knee_joint/Karakt__r_G__:l_foot_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:l_leg_joint/Karakt__r_G__:l_knee_joint/Karakt__r_G__:l_foot_joint/Karakt__r_G__:l_leg_tip_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:r_leg_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:r_leg_joint/Karakt__r_G__:r_knee_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:r_leg_joint/Karakt__r_G__:r_knee_joint/Karakt__r_G__:r_foot_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:r_leg_joint/Karakt__r_G__:r_knee_joint/Karakt__r_G__:r_foot_joint/Karakt__r_G__:r_leg_tip_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint/Karakt__r_G__:l_arm_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint/Karakt__r_G__:l_arm_joint/Karakt__r_G__:l_elbow_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint/Karakt__r_G__:l_arm_joint/Karakt__r_G__:l_elbow_joint/Karakt__r_G__:l_wrist_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint/Karakt__r_G__:l_arm_joint/Karakt__r_G__:l_elbow_joint/Karakt__r_G__:l_wrist_joint/Karakt__r_G__:l_hand_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint/Karakt__r_G__:l_arm_joint/Karakt__r_G__:l_elbow_joint/Karakt__r_G__:l_wrist_joint/Karakt__r_G__:l_hand_joint/Karakt__r_G__:l_finger_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint/Karakt__r_G__:l_arm_joint/Karakt__r_G__:l_elbow_joint/Karakt__r_G__:l_wrist_joint/Karakt__r_G__:l_hand_joint/Karakt__r_G__:l_finger_joint/Karakt__r_G__:l_hand_tip_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint/Karakt__r_G__:l_arm_joint/Karakt__r_G__:l_elbow_joint/Karakt__r_G__:l_wrist_joint/Karakt__r_G__:l_thumb_base_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint/Karakt__r_G__:l_arm_joint/Karakt__r_G__:l_elbow_joint/Karakt__r_G__:l_wrist_joint/Karakt__r_G__:l_thumb_base_joint/Karakt__r_G__:l_thumb_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:l_shoulder_joint/Karakt__r_G__:l_arm_joint/Karakt__r_G__:l_elbow_joint/Karakt__r_G__:l_wrist_joint/Karakt__r_G__:l_thumb_base_joint/Karakt__r_G__:l_thumb_joint/Karakt__r_G__:l_thumb_tip_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:neck_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:neck_joint/Karakt__r_G__:head_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:neck_joint/Karakt__r_G__:head_joint/Karakt__r_G__:head_tip_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:neck_joint/Karakt__r_G__:head_joint/Karakt__r_G__:l_eye_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:neck_joint/Karakt__r_G__:head_joint/Karakt__r_G__:r_eye_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint/Karakt__r_G__:r_arm_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint/Karakt__r_G__:r_arm_joint/Karakt__r_G__:r_elbow_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint/Karakt__r_G__:r_arm_joint/Karakt__r_G__:r_elbow_joint/Karakt__r_G__:r_wrist_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint/Karakt__r_G__:r_arm_joint/Karakt__r_G__:r_elbow_joint/Karakt__r_G__:r_wrist_joint/Karakt__r_G__:r_hand_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint/Karakt__r_G__:r_arm_joint/Karakt__r_G__:r_elbow_joint/Karakt__r_G__:r_wrist_joint/Karakt__r_G__:r_hand_joint/Karakt__r_G__:r_fingers_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint/Karakt__r_G__:r_arm_joint/Karakt__r_G__:r_elbow_joint/Karakt__r_G__:r_wrist_joint/Karakt__r_G__:r_hand_joint/Karakt__r_G__:r_fingers_joint/Karakt__r_G__:r_hand_tip_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint/Karakt__r_G__:r_arm_joint/Karakt__r_G__:r_elbow_joint/Karakt__r_G__:r_wrist_joint/Karakt__r_G__:r_thumb_base_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint/Karakt__r_G__:r_arm_joint/Karakt__r_G__:r_elbow_joint/Karakt__r_G__:r_wrist_joint/Karakt__r_G__:r_thumb_base_joint/Karakt__r_G__:r_thumb_joint
+        weight: 1
+      - path: Karakt__r_G__:root_joint/Karakt__r_G__:waist_jonint/Karakt__r_G__:chest_joint/Karakt__r_G__:r_shoulder_joint/Karakt__r_G__:r_arm_joint/Karakt__r_G__:r_elbow_joint/Karakt__r_G__:r_wrist_joint/Karakt__r_G__:r_thumb_base_joint/Karakt__r_G__:r_thumb_joint/Karakt__r_G__:r_thumb_tip_joint
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
