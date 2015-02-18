@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 434430}
   - 205: {fileID: 20534432}
+  - 136: {fileID: 13675768}
   m_Layer: 0
   m_Name: Tree_03
   m_TagString: Untagged
@@ -41,8 +42,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1887.2793, y: 260.223999, z: 1155.25305}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 657.400024, y: 348.059998, z: 196.070007}
+  m_LocalScale: {x: .749905348, y: .749905527, z: .749905527}
   m_Children:
   - {fileID: 434432}
   m_Father: {fileID: 0}
@@ -102,23 +103,32 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &13675768
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.34000003
+  m_Height: 14.5500002
+  m_Direction: 1
+  m_Center: {x: 0, y: 5.55000019, z: 0}
 --- !u!205 &20534432
 LODGroup:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134430}
-  m_LocalReferencePoint: {x: .00382864475, y: .0854490921, z: -.00749796629}
-  m_Size: .170907751
+  m_LocalReferencePoint: {x: .382863998, y: 8.54490948, z: -.749795914}
+  m_Size: 22.7905731
   m_ScreenRelativeTransitionHeight: 0
   m_LODs:
-  - screenRelativeHeight: .600000024
+  - screenRelativeHeight: .00154326123
     renderers:
     - renderer: {fileID: 2334432}
-  - screenRelativeHeight: .300000012
-    renderers: []
-  - screenRelativeHeight: .100000001
-    renderers: []
   m_Enabled: 1
 --- !u!1001 &100100000
 Prefab:

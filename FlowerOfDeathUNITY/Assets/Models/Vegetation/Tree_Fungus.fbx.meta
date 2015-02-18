@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da76c5197f7f14b4e86f4df04ff72a71
+guid: 1b7d6ae0dc924ee4ab0560193c98b59e
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -7,7 +7,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Fallen_Tree_Mesh_01
+    4300000: pCylinder7
     9500000: //RootNode
   materials:
     importMaterials: 1
