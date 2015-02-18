@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour {
 
     Vector3 cameraDir;
     Vector3 dir;
+    Vector3 glidetilt;
 
     // Use this for initialization
     void Start() {
@@ -44,6 +45,7 @@ public class PlayerMovement : MonoBehaviour {
 
         cameraDir = new Vector3(0, 0, 0);
         dir = new Vector3(0, 0, 0);
+        glidetilt = new Vector3(0, 0, 0);
 
     }
 
@@ -69,12 +71,33 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void AnimUpdate() {
+
         animator.SetFloat("speed", player.rigidbody.velocity.magnitude);
         animator.SetBool("gliding", glide);
 
+
         Vector3 looktarget = (playerModel.position + player.rigidbody.velocity/*dir*/) - playerModel.position;
 
-        playerModel.rotation = Quaternion.Slerp(playerModel.rotation, Quaternion.LookRotation(looktarget), Time.deltaTime*player.rigidbody.velocity.magnitude);
+        Vector3 lookAtPos = looktarget + playerModel.position + Vector3.up*2;
+
+
+        if (glide) {
+            playerModel.rotation = Quaternion.Slerp(playerModel.rotation, Quaternion.LookRotation(looktarget/*, -glidetilt*/), Time.deltaTime * player.rigidbody.velocity.magnitude);
+
+        }
+        else {
+            looktarget.y = 0;
+            playerModel.rotation = Quaternion.Slerp(playerModel.rotation, Quaternion.LookRotation(looktarget), Time.deltaTime * player.rigidbody.velocity.magnitude);
+
+        }
+
+        animator.SetLookAtPosition(lookAtPos);
+        animator.SetLookAtWeight(1);
+
+        Debug.DrawLine(playerModel.position, playerModel.position+looktarget);
+        Debug.DrawRay(playerModel.position, -glidetilt*3, Color.gray);
+
+               //playerModel.Rotate(new Vector3(0,90,0));
         //playerModel.rotation
         //playerModel.rotation = Quaternion.Lo
         //playerModel.rotation.SetLookRotation(dir, Vector3.up);
@@ -114,11 +137,19 @@ public class PlayerMovement : MonoBehaviour {
             player.rigidbody.AddForce(-player.rigidbody.velocity * dotAbs * 2);
             player.rigidbody.AddForce(move.normalized * player.rigidbody.velocity.magnitude * dotAbs * 2);
 
+
+            // TODO:: PROBLEMS
+
+
+
             Debug.DrawRay(player.position, -player.rigidbody.velocity.normalized * dotAbs * 2, Color.red);
             Debug.DrawRay(player.position, move.normalized * dotAbs * 2, Color.blue);
             
             //if (dot < 0) Debug.Log(Vector3.Lerp(move, Vector3.zero, (dot + 0.2f)));
             // move = Vector3.Lerp(move, Vector3.zero, (dot+0.2f));
+
+            glidetilt = upDir + (playerModel.right * (dotAbs));
+
             
             move *= glidemovefactor;
 
@@ -126,6 +157,7 @@ public class PlayerMovement : MonoBehaviour {
             return;
 
         }
+        glidetilt = Vector3.zero;
         // DOT PRODUCT MAX SPEED 
 
         float v = player.rigidbody.velocity.magnitude;

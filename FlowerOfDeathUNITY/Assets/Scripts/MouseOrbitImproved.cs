@@ -24,6 +24,8 @@ public class MouseOrbitImproved : MonoBehaviour
     float x = 0.0f;
     float y = 0.0f;
 
+    public float camRotSpeed, camMoveSpeed;
+
     // Use this for initialization
     void Start() {
         Vector3 angles = transform.eulerAngles;
@@ -65,8 +67,11 @@ public class MouseOrbitImproved : MonoBehaviour
             Vector3 negDistance = new Vector3(0.0f, -distance/6, -distance);
             Vector3 position = rotation * negDistance + target.position;
 
-            transform.rotation = rotation;
-            transform.position = position;
+            //transform.rotation = rotation;
+            //transform.position = position;
+
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * camRotSpeed);
+            transform.position = Vector3.Lerp(transform.position, position, Time.deltaTime * camMoveSpeed);
 
             FeedCameraDir();
 
