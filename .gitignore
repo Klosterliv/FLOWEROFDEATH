@@ -77,3 +77,6 @@ ehthumbs.db
 [Tt]humbs.db
 *.csproj
 *.unityproj
+*.unityproj
+*.sln
+*.suo
