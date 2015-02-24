@@ -24,7 +24,7 @@ Material:
         first:
           name: _Diffuse
         second:
-          m_Texture: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+          m_Texture: {fileID: 2800000, guid: c21e1d3c7015f0d4fb28cf936171e9b7, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -38,14 +38,14 @@ Material:
         first:
           name: _alpha1
         second:
-          m_Texture: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
+          m_Texture: {fileID: 2800000, guid: 16c949f8b00119b48bd09ddcd2879c10, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _alpha2
         second:
-          m_Texture: {fileID: 2800000, guid: 421c05cb33c35724db61a30e3a20003b, type: 3}
+          m_Texture: {fileID: 2800000, guid: b494399d0f9ee0b49b84b8de7296e719, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -56,7 +56,7 @@ Material:
       data:
         first:
           name: _BulgeScale
-        second: .00999999978
+        second: .0900000036
       data:
         first:
           name: _BulgeShape
@@ -84,11 +84,11 @@ Material:
       data:
         first:
           name: _depthBlend
-        second: 1.77999997
+        second: .5
       data:
         first:
           name: _fresnel
-        second: 5.28999996
+        second: 3.46000004
     m_Colors:
       data:
         first:
@@ -97,4 +97,4 @@ Material:
       data:
         first:
           name: _GlowColor
-        second: {r: .95588237, g: .739500046, b: .702854693, a: 1}
+        second: {r: .0527140908, g: .477941155, b: .231602788, a: 1}
