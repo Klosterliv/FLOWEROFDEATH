@@ -31,8 +31,50 @@ Material:
         first:
           name: _node_4659
         second:
-          m_Texture: {fileID: 2800000, guid: 3a5a96df060a5cf4a9cc0c59e13486b7, type: 3}
-          m_Scale: {x: 10, y: 10}
+          m_Texture: {fileID: 2800000, guid: 3d65f3fcd39728340ac77162e1fdd5b4, type: 3}
+          m_Scale: {x: 5, y: 5}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_6290
+        second:
+          m_Texture: {fileID: 2800000, guid: 16c949f8b00119b48bd09ddcd2879c10, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WINDTEST
+        second:
+          m_Texture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _mask1
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _mask2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _diff
+        second:
+          m_Texture: {fileID: 2800000, guid: 3d65f3fcd39728340ac77162e1fdd5b4, type: 3}
+          m_Scale: {x: 6, y: 6}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _noise
+        second:
+          m_Texture: {fileID: 2800000, guid: e80c3c84ea861404d8a427db8b7abf04, type: 3}
+          m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
@@ -50,6 +92,26 @@ Material:
       data:
         first:
           name: _test
+        second: 90
+      data:
+        first:
+          name: _lightattenuation
+        second: 4.13999987
+      data:
+        first:
+          name: _posX
+        second: 0
+      data:
+        first:
+          name: _posY
+        second: 0
+      data:
+        first:
+          name: _posZ
+        second: 0
+      data:
+        first:
+          name: _EdgeFade
         second: 90
     m_Colors:
       data:
