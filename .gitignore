@@ -77,7 +77,8 @@ ehthumbs.db
 [Tt]humbs.db
 *.csproj
 *.unityproj
-*.unityproj
+*.sln
+
 *.sln
 *.suo
 FlowerOfDeathUNITY/FlowerOfDeathUNITY-csharp.sln
