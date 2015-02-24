@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour {
     }
     void FixedUpdate() {
 
-        Debug.Log(player.rigidbody.velocity.magnitude);
+        Debug.Log("Speed: "+player.rigidbody.velocity.magnitude);
 
         Move();
         Float();
