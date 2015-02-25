@@ -523,6 +523,134 @@ SkinnedMeshRenderer:
     m_Center: {x: -.332306147, y: .964161396, z: .457993209}
     m_Extent: {x: 2.87031817, y: 4.44491768, z: 2.06484079}
   m_DirtyAABB: 0
+--- !u!1 &479247461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 479247463}
+  - 114: {fileID: 479247462}
+  - 23: {fileID: 479247464}
+  m_Layer: 0
+  m_Name: Wind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &479247462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479247461}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000fa7dd32d6f9347ac166335dac1ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask1: {fileID: 2800000, guid: 679c046f87f9ec546ab323d48c282854, type: 3}
+  mask2: {fileID: 2800000, guid: cfce8f9d8eb28ae42becf876f800901c, type: 3}
+  maskBlend:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .383333355
+      value: .0250001177
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 0
+    m_PostInfinity: 0
+  windStrength:
+    serializedVersion: 2
+    m_Curve:
+    - time: .994460821
+      value: .000398218632
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1.99446094
+      value: .000398218632
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  windDirLerp:
+    serializedVersion: 2
+    m_Curve:
+    - time: -.268317521
+      value: .377120376
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .214845896
+      value: .294154048
+      inSlope: -1.79260969
+      outSlope: -1.79260969
+      tangentMode: 0
+    - time: .647969246
+      value: .0321409106
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1.4663614
+      value: .760430932
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 0
+  wind: {x: 0, y: 0, z: 0}
+  windTarget: {x: 0, y: 0, z: 0}
+  windMultiplier: .300000012
+  treeShader: {fileID: 0}
+  timeFactor: 20
+  debugRender: {fileID: 479247461}
+--- !u!4 &479247463
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479247461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 338, y: -713, z: -571}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &479247464
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479247461}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 177c9d1dfef5e824d8cfeefe3391a28e, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!1 &482660664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,7 +1521,7 @@ Transform:
   - {fileID: 52845472}
   - {fileID: 1833141064}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!54 &1044202810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1604,7 +1732,7 @@ Transform:
   m_LocalScale: {x: 640.061829, y: 1212.53857, z: 640.061584}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &1092516717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,7 +1925,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1195979821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,7 +2054,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1239610206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,7 +2524,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1559261316
 GameObject:
   m_ObjectHideFlags: 0

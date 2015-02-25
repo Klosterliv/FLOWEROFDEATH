@@ -4,10 +4,60 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: polySurface261
+    100004: polySurface262
+    100006: polySurface263
+    100008: polySurface264
+    100010: polySurface265
+    100012: polySurface266
+    100014: polySurface267
+    100016: polySurface268
+    100018: polySurface269
+    100020: polySurface270
     400000: //RootNode
+    400002: polySurface261
+    400004: polySurface262
+    400006: polySurface263
+    400008: polySurface264
+    400010: polySurface265
+    400012: polySurface266
+    400014: polySurface267
+    400016: polySurface268
+    400018: polySurface269
+    400020: polySurface270
     2300000: //RootNode
+    2300002: polySurface261
+    2300004: polySurface262
+    2300006: polySurface263
+    2300008: polySurface264
+    2300010: polySurface265
+    2300012: polySurface266
+    2300014: polySurface267
+    2300016: polySurface268
+    2300018: polySurface269
+    2300020: polySurface270
     3300000: //RootNode
+    3300002: polySurface261
+    3300004: polySurface262
+    3300006: polySurface263
+    3300008: polySurface264
+    3300010: polySurface265
+    3300012: polySurface266
+    3300014: polySurface267
+    3300016: polySurface268
+    3300018: polySurface269
+    3300020: polySurface270
     4300000: Plant_mesh_01
+    4300002: polySurface261
+    4300004: polySurface262
+    4300006: polySurface263
+    4300008: polySurface264
+    4300010: polySurface265
+    4300012: polySurface266
+    4300014: polySurface267
+    4300016: polySurface268
+    4300018: polySurface269
+    4300020: polySurface270
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -28,7 +78,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
