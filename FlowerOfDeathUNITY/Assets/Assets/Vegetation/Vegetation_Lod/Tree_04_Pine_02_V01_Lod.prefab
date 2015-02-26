@@ -76,7 +76,7 @@ GameObject:
   - 205: {fileID: 20587984}
   - 136: {fileID: 13687984}
   m_Layer: 0
-  m_Name: Tree_04_Pine_02_Lod
+  m_Name: Tree_04_Pine_02_V01_Lod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
