@@ -5,6 +5,9 @@ using System.Collections;
 public class MouseOrbitImproved : MonoBehaviour
 {
 
+    public AnimationCurve shakeMaxBySpeed;
+    public AnimationCurve FOViewBySpeed;
+
     public LayerMask ignoreLayer;
     PlayerMovement playerMovement;
 
@@ -26,8 +29,16 @@ public class MouseOrbitImproved : MonoBehaviour
 
     public float camRotSpeed, camMoveSpeed;
 
+    public float shakeMultiplier = 1;
+    public float shakeSpeed = 1;
+
+    Vector3 targetPos;
+
     // Use this for initialization
     void Start() {
+
+        Vector3 targetPos = transform.position;
+
         Vector3 angles = transform.eulerAngles;
         x = angles.y;
         y = angles.x;
@@ -71,7 +82,19 @@ public class MouseOrbitImproved : MonoBehaviour
             //transform.position = position;
 
             transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * camRotSpeed);
-            transform.position = Vector3.Lerp(transform.position, position, Time.deltaTime * camMoveSpeed);
+            targetPos = Vector3.Lerp(targetPos, position, Time.deltaTime * camMoveSpeed);
+
+            // CAM SHAKE
+
+            float speed = playerMovement.player.rigidbody.velocity.magnitude;
+            float maxShake = shakeMaxBySpeed.Evaluate(speed);
+            float shakeX = Mathf.PerlinNoise(Time.time*shakeSpeed, Time.time*shakeSpeed) - 0.5f;
+            float shakeY = Mathf.PerlinNoise(Time.time*shakeSpeed+100, Time.time*shakeSpeed+100) - 0.5f;
+            Vector3 shakeOffset = camera.transform.up * shakeY + camera.transform.right * shakeX;
+            //Vector3 shakeOffset = camera.transform.up * Random.Range(-maxShake, maxShake) + camera.transform.right * Random.Range(-maxShake, maxShake);
+            transform.position = targetPos + (shakeOffset * shakeMultiplier * maxShake) - camera.transform.forward * FOViewBySpeed.Evaluate(speed);
+            Debug.Log(shakeOffset);
+            //camera.fieldOfView = FOViewBySpeed.Evaluate(speed);
 
             FeedCameraDir();
 

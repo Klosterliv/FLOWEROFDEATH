@@ -22,6 +22,27 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _AlphaContribution
+        second:
+          m_Texture: {fileID: 2800000, guid: d7a1ea3e95ca202469aaded915ebcc76, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Diffuse
+        second:
+          m_Texture: {fileID: 2800000, guid: dfc4a1deb0bd5cb468093077c76f9242, type: 3}
+          m_Scale: {x: 4, y: 4}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WindNoise
+        second:
+          m_Texture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _alpha
         second:
           m_Texture: {fileID: 2800000, guid: d7a1ea3e95ca202469aaded915ebcc76, type: 3}
@@ -88,7 +109,19 @@ Material:
       data:
         first:
           name: _Fresnelpower
-        second: .230000004
+        second: 1
+      data:
+        first:
+          name: _EdgeFade
+        second: 300
+      data:
+        first:
+          name: _posX
+        second: 0
+      data:
+        first:
+          name: _posZ
+        second: 0
       data:
         first:
           name: _test
@@ -99,20 +132,8 @@ Material:
         second: 4.13999987
       data:
         first:
-          name: _posX
-        second: 0
-      data:
-        first:
           name: _posY
         second: 0
-      data:
-        first:
-          name: _posZ
-        second: 0
-      data:
-        first:
-          name: _EdgeFade
-        second: 90
     m_Colors:
       data:
         first:
