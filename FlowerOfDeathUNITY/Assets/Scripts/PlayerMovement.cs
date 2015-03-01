@@ -78,7 +78,9 @@ public class PlayerMovement : MonoBehaviour {
 
         Vector3 looktarget = (playerModel.position + player.rigidbody.velocity/*dir*/) - playerModel.position;
 
-        Vector3 lookAtPos = looktarget + playerModel.position + Vector3.up*2;
+        //Vector3 lookAtPos = looktarget + playerModel.position + Vector3.up*2;
+        // TODO :: PROPER
+        Vector3 lookAtPos = animator.bodyPosition + Vector3.up -cameraDir * 5;
 
 
         if (glide) {
