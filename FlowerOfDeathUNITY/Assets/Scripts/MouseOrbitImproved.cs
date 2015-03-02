@@ -12,6 +12,8 @@ public class MouseOrbitImproved : MonoBehaviour
     PlayerMovement playerMovement;
 
     public Transform target;
+    public Vector3 targetOffset;
+
     public float distance = 5.0f;
     public float xSpeed = 120.0f;
     public float ySpeed = 120.0f;
@@ -21,6 +23,8 @@ public class MouseOrbitImproved : MonoBehaviour
 
     public float distanceMin = .5f;
     public float distanceMax = 15f;
+    public float groundDistance = 1f;
+
 
     float targetDistance;
 
@@ -61,9 +65,9 @@ public class MouseOrbitImproved : MonoBehaviour
             Quaternion rotation = Quaternion.Euler(y, x, 0);
 
             //distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distanceMin, distanceMax);
-            
 
-            RaycastHit hit;
+            float gdist = 0;
+            RaycastHit hit, dhit;
             //Debug.DrawRay(target.position, transform.position - target.position, Color.magenta);
             if (Physics.Raycast(target.position, transform.position - target.position, out hit, distanceMax, ignoreLayer)) {
                 distance -= hit.distance;
@@ -71,12 +75,22 @@ public class MouseOrbitImproved : MonoBehaviour
             }
             else distance = distanceMax;
 
+            //DOWN
+            if (Physics.Raycast(transform.position, -Vector3.up, out dhit, groundDistance, ignoreLayer)) {
+                gdist = groundDistance - dhit.distance;
+                Debug.Log(gdist);
+            }
+            else if (Physics.Raycast(transform.position, Vector3.up, out dhit, groundDistance, ignoreLayer)) {
+                gdist = groundDistance + dhit.distance;
+                Debug.Log(gdist);
+            }
+
             distance = Mathf.Clamp(distance, distanceMin, distanceMax);
 
 
            // Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
-            Vector3 negDistance = new Vector3(0.0f, -distance/6, -distance);
-            Vector3 position = rotation * negDistance + target.position;
+            Vector3 negDistance = new Vector3(0.0f, distance/6, -distance);
+            Vector3 position = rotation * negDistance + target.position /*+ Vector3.up*gdist */+ targetOffset;
 
             //transform.rotation = rotation;
             //transform.position = position;
@@ -93,7 +107,6 @@ public class MouseOrbitImproved : MonoBehaviour
             Vector3 shakeOffset = camera.transform.up * shakeY + camera.transform.right * shakeX;
             //Vector3 shakeOffset = camera.transform.up * Random.Range(-maxShake, maxShake) + camera.transform.right * Random.Range(-maxShake, maxShake);
             transform.position = targetPos + (shakeOffset * shakeMultiplier * maxShake) - camera.transform.forward * FOViewBySpeed.Evaluate(speed);
-            Debug.Log(shakeOffset);
             //camera.fieldOfView = FOViewBySpeed.Evaluate(speed);
 
             FeedCameraDir();
