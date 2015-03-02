@@ -17,11 +17,25 @@ public class movetreeslol : MonoBehaviour {
     Material material2;
 
     float t = 0;
+    float lt;
     public float tFactor = 20f;
+
+    public Vector3 rotator;
+
+    Quaternion maxRot;
+    Quaternion minRot;
+
+    Quaternion targetRot;
 
 
 	// Use this for initialization
 	void Start () {
+
+        minRot = transform.rotation;
+        maxRot = Quaternion.FromToRotation(transform.up, transform.right);
+
+        lt = Random.Range(0f, 1f);
+        transform.rotation = Quaternion.Lerp(minRot, maxRot, lt);
 
         material = gameObject.renderer.materials[1];
         //material2 = gameObject.renderer.materials[2];
@@ -35,11 +49,20 @@ public class movetreeslol : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        lt += Time.deltaTime;
+        if (lt >= 0.95) { 
+            lt = 0;
+            if (targetRot == maxRot) targetRot = minRot;
+            else targetRot = maxRot;
+        }
+
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, lt);
+
         //t += (Time.deltaTime/tFactor);
 
 
-        material.SetFloat("_posX", transform.position.x);
-        material.SetFloat("_posZ", transform.position.z);
+        //material.SetFloat("_posX", transform.position.x);
+        //material.SetFloat("_posZ", transform.position.z);
        
 
 	

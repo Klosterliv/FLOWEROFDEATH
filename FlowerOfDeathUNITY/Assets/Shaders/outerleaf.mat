@@ -22,6 +22,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _AlphaContribution
+        second:
+          m_Texture: {fileID: 2800000, guid: d7a1ea3e95ca202469aaded915ebcc76, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _Diffuse
         second:
           m_Texture: {fileID: 2800000, guid: dfc4a1deb0bd5cb468093077c76f9242, type: 3}
@@ -29,16 +36,9 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _mask1
+          name: _WindNoise
         second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _mask2
-        second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -71,6 +71,20 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _mask1
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _mask2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _diff
         second:
           m_Texture: {fileID: 2800000, guid: 3d65f3fcd39728340ac77162e1fdd5b4, type: 3}
@@ -83,20 +97,6 @@ Material:
           m_Texture: {fileID: 2800000, guid: e80c3c84ea861404d8a427db8b7abf04, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _AlphaContribution
-        second:
-          m_Texture: {fileID: 2800000, guid: d7a1ea3e95ca202469aaded915ebcc76, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WindNoise
-        second:
-          m_Texture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -105,11 +105,23 @@ Material:
       data:
         first:
           name: _Fresnel
-        second: 5.3499999
+        second: 4.92999983
       data:
         first:
           name: _Fresnelpower
-        second: 1.10000002
+        second: 1
+      data:
+        first:
+          name: _EdgeFade
+        second: 300
+      data:
+        first:
+          name: _posX
+        second: 0
+      data:
+        first:
+          name: _posZ
+        second: 0
       data:
         first:
           name: _test
@@ -120,20 +132,8 @@ Material:
         second: 4.13999987
       data:
         first:
-          name: _posX
-        second: 0
-      data:
-        first:
           name: _posY
         second: 0
-      data:
-        first:
-          name: _posZ
-        second: 0
-      data:
-        first:
-          name: _EdgeFade
-        second: 109.970001
     m_Colors:
       data:
         first:

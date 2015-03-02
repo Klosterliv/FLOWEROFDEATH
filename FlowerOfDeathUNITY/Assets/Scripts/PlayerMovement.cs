@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour {
     }
     void FixedUpdate() {
 
-        Debug.Log("Speed: "+player.rigidbody.velocity.magnitude);
+        //Debug.Log("Speed: "+player.rigidbody.velocity.magnitude);
 
         Move();
         Float();
@@ -78,7 +78,9 @@ public class PlayerMovement : MonoBehaviour {
 
         Vector3 looktarget = (playerModel.position + player.rigidbody.velocity/*dir*/) - playerModel.position;
 
-        Vector3 lookAtPos = looktarget + playerModel.position + Vector3.up*2;
+        //Vector3 lookAtPos = looktarget + playerModel.position + Vector3.up*2;
+        // TODO :: PROPER
+        Vector3 lookAtPos = animator.bodyPosition + Vector3.up -cameraDir * 5;
 
 
         if (glide) {
@@ -88,7 +90,7 @@ public class PlayerMovement : MonoBehaviour {
         else {
             looktarget.y = 0;
             playerModel.rotation = Quaternion.Slerp(playerModel.rotation, Quaternion.LookRotation(looktarget), Time.deltaTime * player.rigidbody.velocity.magnitude);
-
+            // TODO: FIX WARNING
         }
 
         animator.SetLookAtPosition(lookAtPos);
