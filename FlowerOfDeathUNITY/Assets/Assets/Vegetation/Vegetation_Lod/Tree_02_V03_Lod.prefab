@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 430926}
   - 205: {fileID: 20530946}
   - 136: {fileID: 13630946}
+  - 114: {fileID: 11408992}
   m_Layer: 0
   m_Name: Tree_02_V03_Lod
   m_TagString: Untagged
@@ -184,9 +185,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130926}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 623.472046, y: 347.567963, z: 199.545303}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: .0145767229, y: -.978544652, z: .0580805987, w: .197141185}
+  m_LocalPosition: {x: 1818.24207, y: 212.8582, z: 226.49942}
+  m_LocalScale: {x: 1.92360854, y: 1.92360854, z: 1.92360854}
   m_Children:
   - {fileID: 430928}
   m_Father: {fileID: 0}
@@ -470,6 +471,17 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11408992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f1f3a369f416b4b94ce788399b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &13630946
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -489,11 +501,11 @@ LODGroup:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130926}
-  m_LocalReferencePoint: {x: -.0806405246, y: 4.71766472, z: .307803035}
-  m_Size: 9.51134109
+  m_LocalReferencePoint: {x: -.0808070302, y: 4.717659, z: .307781518}
+  m_Size: 4.94453716
   m_ScreenRelativeTransitionHeight: 0
   m_LODs:
-  - screenRelativeHeight: .0465536751
+  - screenRelativeHeight: .217848048
     renderers:
     - renderer: {fileID: 2330938}
     - renderer: {fileID: 2330940}

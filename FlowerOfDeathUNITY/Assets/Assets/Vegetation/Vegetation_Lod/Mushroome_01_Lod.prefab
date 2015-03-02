@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 442986}
   - 205: {fileID: 20542976}
+  - 114: {fileID: 11448460}
   m_Layer: 0
   m_Name: Mushroome_01_Lod
   m_TagString: Untagged
@@ -168,9 +169,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142986}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 545.061218, y: 350.740723, z: 188.292923}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: .0298254192, y: .0638403147, z: -.0202559233, w: .997308671}
+  m_LocalPosition: {x: 1690.75537, y: 207.544495, z: 1228.84094}
+  m_LocalScale: {x: 1.0699662, y: 1.0699662, z: 1.0699662}
   m_Children:
   - {fileID: 442984}
   - {fileID: 442982}
@@ -287,14 +288,25 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11448460
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f1f3a369f416b4b94ce788399b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &20542976
 LODGroup:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142986}
-  m_LocalReferencePoint: {x: -5.14984131e-05, y: .161992297, z: -2.98023224e-07}
-  m_Size: .373006731
+  m_LocalReferencePoint: {x: .000105679035, y: .162027419, z: -2.98023224e-07}
+  m_Size: .348615438
   m_ScreenRelativeTransitionHeight: 0
   m_LODs:
   - screenRelativeHeight: .0136065362
