@@ -1,35 +1,42 @@
 fileFormatVersion: 2
-guid: 6ea5e6fc7e058fa44ac41a924f541d4a
+guid: 088cc88e086508f4994e9c24dd15bac7
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: tree_8_v1_lod1:polySurface306
-    100002: tree_8_v1_lod1:polySurface307
-    100004: tree_8_v1_lod1:polySurface308
-    100006: tree_8_v1_lod1:polySurface309
-    100008: tree_8_v1_lod1:polySurface317
-    100010: //RootNode
-    400000: tree_8_v1_lod1:polySurface306
-    400002: tree_8_v1_lod1:polySurface307
-    400004: tree_8_v1_lod1:polySurface308
-    400006: tree_8_v1_lod1:polySurface309
-    400008: tree_8_v1_lod1:polySurface317
-    400010: //RootNode
-    2300000: tree_8_v1_lod1:polySurface306
-    2300002: tree_8_v1_lod1:polySurface307
-    2300004: tree_8_v1_lod1:polySurface308
-    2300006: tree_8_v1_lod1:polySurface309
-    2300008: tree_8_v1_lod1:polySurface317
-    3300000: tree_8_v1_lod1:polySurface306
-    3300002: tree_8_v1_lod1:polySurface307
-    3300004: tree_8_v1_lod1:polySurface308
-    3300006: tree_8_v1_lod1:polySurface309
-    3300008: tree_8_v1_lod1:polySurface317
-    4300000: tree_8_v1_lod1:polySurface317
-    4300002: tree_8_v1_lod1:polySurface306
-    4300004: tree_8_v1_lod1:polySurface307
-    4300006: tree_8_v1_lod1:polySurface308
-    4300008: tree_8_v1_lod1:polySurface309
+    100000: polySurface231
+    100002: polySurface255
+    100004: polySurface256
+    100006: polySurface257
+    100008: polySurface258
+    100010: polySurface259
+    100012: polySurface260
+    100014: //RootNode
+    400000: polySurface231
+    400002: polySurface255
+    400004: polySurface256
+    400006: polySurface257
+    400008: polySurface258
+    400010: polySurface259
+    400012: polySurface260
+    400014: //RootNode
+    2300000: polySurface255
+    2300002: polySurface256
+    2300004: polySurface257
+    2300006: polySurface258
+    2300008: polySurface259
+    2300010: polySurface260
+    3300000: polySurface255
+    3300002: polySurface256
+    3300004: polySurface257
+    3300006: polySurface258
+    3300008: polySurface259
+    3300010: polySurface260
+    4300000: polySurface255
+    4300002: polySurface256
+    4300004: polySurface257
+    4300006: polySurface258
+    4300008: polySurface259
+    4300010: polySurface260
     9500000: //RootNode
   materials:
     importMaterials: 1
