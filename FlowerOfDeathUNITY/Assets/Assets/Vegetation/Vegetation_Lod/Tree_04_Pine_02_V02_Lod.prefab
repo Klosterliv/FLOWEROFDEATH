@@ -89,7 +89,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 157338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 545.644348, y: 353.858032, z: 186.490295}
+  m_LocalPosition: {x: 135.59137, y: 359.000397, z: 1264.08252}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 457340}
@@ -238,7 +238,7 @@ LODGroup:
   m_Size: 7.37541771
   m_ScreenRelativeTransitionHeight: 0
   m_LODs:
-  - screenRelativeHeight: .0103920037
+  - screenRelativeHeight: .161183625
     renderers:
     - renderer: {fileID: 2357344}
     - renderer: {fileID: 2357346}

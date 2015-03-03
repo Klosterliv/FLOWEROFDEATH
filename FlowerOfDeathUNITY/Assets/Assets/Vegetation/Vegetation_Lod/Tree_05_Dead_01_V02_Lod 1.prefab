@@ -28,6 +28,7 @@ GameObject:
   - 4: {fileID: 437312}
   - 205: {fileID: 20537310}
   - 136: {fileID: 13637310}
+  - 114: {fileID: 11419532}
   m_Layer: 0
   m_Name: Tree_05_Dead_01_V02_Lod 1
   m_TagString: Untagged
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 176.410522, y: 402.591492, z: 1459.82959}
+  m_LocalPosition: {x: 663.015991, y: 338.457031, z: 277.698975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 437310}
@@ -104,6 +105,17 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11419532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f1f3a369f416b4b94ce788399b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &13637310
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -127,7 +139,7 @@ LODGroup:
   m_Size: 9.07482052
   m_ScreenRelativeTransitionHeight: 0
   m_LODs:
-  - screenRelativeHeight: .0102488119
+  - screenRelativeHeight: .173852861
     renderers:
     - renderer: {fileID: 2337310}
   m_Enabled: 1
