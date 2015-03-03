@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b6a4e0f739564834babe8a308957e767
+guid: 71703e21bb22fa449997434ca83cc124
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -7,7 +7,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pPlane1
+    4300000: polySurface2
     9500000: //RootNode
   materials:
     importMaterials: 1
