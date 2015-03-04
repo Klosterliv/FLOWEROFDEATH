@@ -5,6 +5,19 @@ using System.Collections;
 public class MouseOrbitImproved : MonoBehaviour
 {
 
+    public string XInput = "Mouse X", YInput = "Mouse Y";
+    public bool reduceAlphaWhenClose;
+    public float reduceAlphaStartDistance, reduceAlphaEndDistance;
+    public bool colorOrValue = true;
+    public string alphaNameInShader = "_Color";
+    public float minAlpha = 0f, maxAlpha = 1f;
+    public Transform targetRenderer;
+    /*
+    public bool enableZoom;
+    public string zoomAxis;
+    public float zoomSpeed;
+    */ // TODO:
+
     public AnimationCurve shakeMaxBySpeed;
     public AnimationCurve FOViewBySpeed;
 
@@ -57,8 +70,11 @@ public class MouseOrbitImproved : MonoBehaviour
 
     void LateUpdate() {
         if (target) {
-            x += Input.GetAxis("Mouse X") * xSpeed * distance * 0.02f;
-            y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
+
+            
+
+            x += Input.GetAxis(XInput) * xSpeed * distance * 0.02f;
+            y -= Input.GetAxis(YInput) * ySpeed * 0.02f;
 
             y = ClampAngle(y, yMinLimit, yMaxLimit);
 
@@ -74,23 +90,25 @@ public class MouseOrbitImproved : MonoBehaviour
                 distance = hit.distance -1f;
             }
             else distance = distanceMax;
+            Debug.DrawRay(target.position, (transform.position - target.position).normalized * distance, Color.magenta);
 
             //DOWN
             if (Physics.Raycast(transform.position, -Vector3.up, out dhit, groundDistance, ignoreLayer)) {
                 gdist = groundDistance - dhit.distance;
-                Debug.Log(gdist);
+                //Debug.Log(gdist);
             }
             else if (Physics.Raycast(transform.position, Vector3.up, out dhit, groundDistance, ignoreLayer)) {
                 gdist = groundDistance + dhit.distance;
-                Debug.Log(gdist);
+                //Debug.Log(gdist);
             }
 
             distance = Mathf.Clamp(distance, distanceMin, distanceMax);
+            //Debug.Log(distance);
 
 
            // Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
             Vector3 negDistance = new Vector3(0.0f, distance/6, -distance);
-            Vector3 position = rotation * negDistance + target.position /*+ Vector3.up*gdist */+ targetOffset;
+            Vector3 position = rotation * negDistance + target.position /*+ Vector3.up*gdist + targetOffset*/;
 
             //transform.rotation = rotation;
             //transform.position = position;
@@ -110,6 +128,9 @@ public class MouseOrbitImproved : MonoBehaviour
             //camera.fieldOfView = FOViewBySpeed.Evaluate(speed);
 
             FeedCameraDir();
+            ApplyAlphaWhenClose();
+
+            CheckClipping();
 
         }
 
@@ -131,6 +152,65 @@ public class MouseOrbitImproved : MonoBehaviour
 
         playerMovement.SetCameraDir(dirNoY);
 
+    }
+
+    void CheckClipping() {
+
+        float cp = camera.nearClipPlane;
+
+        Vector3 uL = camera.ViewportToWorldPoint(new Vector3(0, 0, cp));
+        Vector3 mL = camera.ViewportToWorldPoint(new Vector3(0, 0.5f, cp));
+        Vector3 dL = camera.ViewportToWorldPoint(new Vector3(0, 1, cp));
+        Vector3 uM = camera.ViewportToWorldPoint(new Vector3(0.5f, 0, cp));
+        Vector3 dM = camera.ViewportToWorldPoint(new Vector3(0.5f, 1, cp));
+        Vector3 uR = camera.ViewportToWorldPoint(new Vector3(1, 0, cp));
+        Vector3 mR = camera.ViewportToWorldPoint(new Vector3(1, 0.5f, cp));
+        Vector3 dR = camera.ViewportToWorldPoint(new Vector3(1, 1, cp));
+
+
+        Debug.DrawLine(transform.position, uL, Color.blue);
+        Debug.DrawLine(transform.position, mL, Color.red);
+        Debug.DrawLine(transform.position, dL, Color.red);
+        Debug.DrawLine(transform.position, uM, Color.red);
+        Debug.DrawLine(transform.position, dM, Color.red);
+        Debug.DrawLine(transform.position, uR, Color.red);
+        Debug.DrawLine(transform.position, mR, Color.red);
+        Debug.DrawLine(transform.position, dR, Color.red);
+
+
+    }
+
+    void ApplyAlphaWhenClose() {
+
+        if (reduceAlphaWhenClose) {
+
+            if (reduceAlphaStartDistance < reduceAlphaEndDistance) {
+                Debug.LogWarning("Alpha start distance lower than distanceMin: not applying!");                
+                return; 
+            }
+            else if (!targetRenderer.renderer) {
+                Debug.LogWarning("No renderer assigned");
+                return;
+            }
+
+            Material mat = targetRenderer.renderer.material;
+
+            //Mathf.Clamp01( (reduceAlphaStartDistance-distance-reduceAlphaEndDistance)/(reduceAlphaStartDistance-reduceAlphaEndDistance) )
+
+            float a = Mathf.Lerp(minAlpha, maxAlpha, Mathf.Clamp01((distance - reduceAlphaEndDistance) / (reduceAlphaStartDistance - reduceAlphaEndDistance)));
+            if (colorOrValue) {
+                Color newAlpha = mat.GetColor(alphaNameInShader);
+                newAlpha.a = a;
+                mat.SetColor(alphaNameInShader, newAlpha);
+
+                Debug.Log("newA:" + a + " , ");
+            }
+            else {
+                float newAlpha = a;
+                mat.SetFloat(alphaNameInShader, newAlpha);
+            }
+        }
+        return;
     }
 
 

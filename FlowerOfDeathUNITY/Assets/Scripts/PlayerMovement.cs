@@ -73,8 +73,9 @@ public class PlayerMovement : MonoBehaviour {
     void AnimUpdate() {
 
         animator.SetFloat("speed", player.rigidbody.velocity.magnitude);
+        animator.SetFloat("vertSpeed", player.rigidbody.velocity.y);
         animator.SetBool("gliding", glide);
-
+        animator.SetFloat("groundDist", minDist-1.5f);
 
         Vector3 looktarget = (playerModel.position + player.rigidbody.velocity/*dir*/) - playerModel.position;
 
@@ -276,6 +277,10 @@ public class PlayerMovement : MonoBehaviour {
     public void SetCameraDir(Vector3 camDir) {
         cameraDir = camDir;
         
+    }
+
+    public Vector3 GetUpDir() {
+        return Vector3.zero;
     }
 
 }
