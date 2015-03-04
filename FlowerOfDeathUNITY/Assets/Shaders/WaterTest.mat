@@ -34,12 +34,12 @@ Material:
         second: .5
       data:
         first:
-          name: _Fresnel
-        second: 3.75
+          name: _DepthBlend
+        second: 2.9000001
       data:
         first:
-          name: _DepthBlend
-        second: 15.46
+          name: _Fresnel
+        second: 14.6700001
     m_Colors:
       data:
         first:
@@ -48,7 +48,7 @@ Material:
       data:
         first:
           name: _Tint
-        second: {r: .57819742, g: .126032352, b: .816179097, a: 1}
+        second: {r: .59493947, g: .963235319, b: .947995424, a: 1}
       data:
         first:
           name: _ShoreTint
