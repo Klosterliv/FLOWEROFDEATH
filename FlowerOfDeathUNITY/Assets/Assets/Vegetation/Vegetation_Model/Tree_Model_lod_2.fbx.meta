@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: 097d2dc49c044da41a662b6cfb7290fe
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: polySurface221
+    100002: polySurface237
+    100004: polySurface238
+    100006: polySurface239
+    100008: polySurface240
+    100010: polySurface241
+    100012: polySurface242
+    100014: //RootNode
+    100016: LoD_Tree_1:polySurface221
+    100018: LoD_Tree_1:polySurface237
+    100020: LoD_Tree_1:polySurface238
+    100022: LoD_Tree_1:polySurface239
+    100024: LoD_Tree_1:polySurface240
+    100026: LoD_Tree_1:polySurface241
+    100028: LoD_Tree_1:polySurface242
+    400000: polySurface221
+    400002: polySurface237
+    400004: polySurface238
+    400006: polySurface239
+    400008: polySurface240
+    400010: polySurface241
+    400012: polySurface242
+    400014: //RootNode
+    400016: LoD_Tree_1:polySurface221
+    400018: LoD_Tree_1:polySurface237
+    400020: LoD_Tree_1:polySurface238
+    400022: LoD_Tree_1:polySurface239
+    400024: LoD_Tree_1:polySurface240
+    400026: LoD_Tree_1:polySurface241
+    400028: LoD_Tree_1:polySurface242
+    2300000: polySurface237
+    2300002: polySurface238
+    2300004: polySurface239
+    2300006: polySurface240
+    2300008: polySurface241
+    2300010: polySurface242
+    2300012: LoD_Tree_1:polySurface237
+    2300014: LoD_Tree_1:polySurface238
+    2300016: LoD_Tree_1:polySurface239
+    2300018: LoD_Tree_1:polySurface240
+    2300020: LoD_Tree_1:polySurface241
+    2300022: LoD_Tree_1:polySurface242
+    3300000: polySurface237
+    3300002: polySurface238
+    3300004: polySurface239
+    3300006: polySurface240
+    3300008: polySurface241
+    3300010: polySurface242
+    3300012: LoD_Tree_1:polySurface237
+    3300014: LoD_Tree_1:polySurface238
+    3300016: LoD_Tree_1:polySurface239
+    3300018: LoD_Tree_1:polySurface240
+    3300020: LoD_Tree_1:polySurface241
+    3300022: LoD_Tree_1:polySurface242
+    4300000: polySurface237
+    4300002: polySurface238
+    4300004: polySurface239
+    4300006: polySurface240
+    4300008: polySurface241
+    4300010: polySurface242
+    4300012: LoD_Tree_1:polySurface237
+    4300014: LoD_Tree_1:polySurface238
+    4300016: LoD_Tree_1:polySurface239
+    4300018: LoD_Tree_1:polySurface240
+    4300020: LoD_Tree_1:polySurface241
+    4300022: LoD_Tree_1:polySurface242
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
