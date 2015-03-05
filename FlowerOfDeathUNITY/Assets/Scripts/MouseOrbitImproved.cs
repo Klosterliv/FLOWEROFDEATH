@@ -46,6 +46,7 @@ public class MouseOrbitImproved : MonoBehaviour
 
     public float camRotSpeed, camMoveSpeed;
 
+    public bool shakeEnabled, FOVbySpeedEnabled;
     public float shakeMultiplier = 1;
     public float shakeSpeed = 1;
 
@@ -107,7 +108,7 @@ public class MouseOrbitImproved : MonoBehaviour
 
 
            // Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
-            Vector3 negDistance = new Vector3(0.0f, distance/6, -distance);
+            Vector3 negDistance = new Vector3(0.0f, 1f, -distance+1f);
             Vector3 position = rotation * negDistance + target.position /*+ Vector3.up*gdist + targetOffset*/;
 
             //transform.rotation = rotation;
@@ -116,15 +117,27 @@ public class MouseOrbitImproved : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * camRotSpeed);
             targetPos = Vector3.Lerp(targetPos, position, Time.deltaTime * camMoveSpeed);
 
-            // CAM SHAKE
-
+            // CAM SHAKE etc
+            Vector3 modif = Vector3.zero;
             float speed = playerMovement.player.rigidbody.velocity.magnitude;
-            float maxShake = shakeMaxBySpeed.Evaluate(speed);
-            float shakeX = Mathf.PerlinNoise(Time.time*shakeSpeed, Time.time*shakeSpeed) - 0.5f;
-            float shakeY = Mathf.PerlinNoise(Time.time*shakeSpeed+100, Time.time*shakeSpeed+100) - 0.5f;
-            Vector3 shakeOffset = camera.transform.up * shakeY + camera.transform.right * shakeX;
+
+            if (shakeEnabled) {
+                
+                float maxShake = shakeMaxBySpeed.Evaluate(speed);
+                float shakeX = Mathf.PerlinNoise(Time.time * shakeSpeed, Time.time * shakeSpeed) - 0.5f;
+                float shakeY = Mathf.PerlinNoise(Time.time * shakeSpeed + 100, Time.time * shakeSpeed + 100) - 0.5f;
+                Vector3 shakeOffset = camera.transform.up * shakeY + camera.transform.right * shakeX;
+                shakeOffset *= shakeMultiplier * maxShake;
+
+                modif += shakeOffset;
+            }
+            if (FOVbySpeedEnabled) {
+                modif -= camera.transform.forward * FOViewBySpeed.Evaluate(speed);
+            }
+
+
             //Vector3 shakeOffset = camera.transform.up * Random.Range(-maxShake, maxShake) + camera.transform.right * Random.Range(-maxShake, maxShake);
-            transform.position = targetPos + (shakeOffset * shakeMultiplier * maxShake) - camera.transform.forward * FOViewBySpeed.Evaluate(speed);
+            transform.position = targetPos + modif;
             //camera.fieldOfView = FOViewBySpeed.Evaluate(speed);
 
             FeedCameraDir();
@@ -157,25 +170,61 @@ public class MouseOrbitImproved : MonoBehaviour
     void CheckClipping() {
 
         float cp = camera.nearClipPlane;
+        bool clip = true;
+        while (clip) {
 
-        Vector3 uL = camera.ViewportToWorldPoint(new Vector3(0, 0, cp));
-        Vector3 mL = camera.ViewportToWorldPoint(new Vector3(0, 0.5f, cp));
-        Vector3 dL = camera.ViewportToWorldPoint(new Vector3(0, 1, cp));
-        Vector3 uM = camera.ViewportToWorldPoint(new Vector3(0.5f, 0, cp));
-        Vector3 dM = camera.ViewportToWorldPoint(new Vector3(0.5f, 1, cp));
-        Vector3 uR = camera.ViewportToWorldPoint(new Vector3(1, 0, cp));
-        Vector3 mR = camera.ViewportToWorldPoint(new Vector3(1, 0.5f, cp));
-        Vector3 dR = camera.ViewportToWorldPoint(new Vector3(1, 1, cp));
+            Vector3 uL = camera.ViewportToWorldPoint(new Vector3(0, 0, cp));
+            Vector3 mL = camera.ViewportToWorldPoint(new Vector3(0, 0.5f, cp));
+            Vector3 dL = camera.ViewportToWorldPoint(new Vector3(0, 1, cp));
+            Vector3 uM = camera.ViewportToWorldPoint(new Vector3(0.5f, 0, cp));
+            Vector3 dM = camera.ViewportToWorldPoint(new Vector3(0.5f, 1, cp));
+            Vector3 uR = camera.ViewportToWorldPoint(new Vector3(1, 0, cp));
+            Vector3 mR = camera.ViewportToWorldPoint(new Vector3(1, 0.5f, cp));
+            Vector3 dR = camera.ViewportToWorldPoint(new Vector3(1, 1, cp));
 
+            /*
+            Debug.DrawLine(transform.position, uL, Color.blue);
+            Debug.DrawLine(transform.position, mL, Color.red);
+            Debug.DrawLine(transform.position, dL, Color.red);
+            Debug.DrawLine(transform.position, uM, Color.red);
+            Debug.DrawLine(transform.position, dM, Color.red);
+            Debug.DrawLine(transform.position, uR, Color.red);
+            Debug.DrawLine(transform.position, mR, Color.red);
+            Debug.DrawLine(transform.position, dR, Color.red); 
+             * */
 
-        Debug.DrawLine(transform.position, uL, Color.blue);
-        Debug.DrawLine(transform.position, mL, Color.red);
-        Debug.DrawLine(transform.position, dL, Color.red);
-        Debug.DrawLine(transform.position, uM, Color.red);
-        Debug.DrawLine(transform.position, dM, Color.red);
-        Debug.DrawLine(transform.position, uR, Color.red);
-        Debug.DrawLine(transform.position, mR, Color.red);
-        Debug.DrawLine(transform.position, dR, Color.red);
+            RaycastHit hit;
+
+            if (Physics.Linecast(transform.position, uL, out hit, ignoreLayer)) {
+                Debug.DrawLine(transform.position, uL, Color.red, 3f);
+            }
+            else if (Physics.Linecast(transform.position, mL, out hit, ignoreLayer)) {
+                Debug.DrawLine(transform.position, mL, Color.red, 3f);
+            }
+            else if (Physics.Linecast(transform.position, dL, out hit, ignoreLayer)) {
+                Debug.DrawLine(transform.position, dL, Color.red, 3f);
+            }
+            else if (Physics.Linecast(transform.position, uM, out hit, ignoreLayer)) {
+                Debug.DrawLine(transform.position, uM, Color.red, 3f);
+            }
+            else if (Physics.Linecast(transform.position, dM, out hit, ignoreLayer)) {
+                Debug.DrawLine(transform.position, dM, Color.red, 3f);
+            }
+            else if (Physics.Linecast(transform.position, uR, out hit, ignoreLayer)) {
+                Debug.DrawLine(transform.position, uR, Color.red, 3f);
+            }
+            else if (Physics.Linecast(transform.position, mR, out hit, ignoreLayer)) {
+                Debug.DrawLine(transform.position, mR, Color.red, 3f);
+            }
+            else if (Physics.Linecast(transform.position, dR, out hit, ignoreLayer)) {
+                Debug.DrawLine(transform.position, dR, Color.red, 3f);
+            }
+            else clip = false;
+
+            if (clip) {
+                transform.position += transform.forward * cp;
+            }
+        }
 
 
     }
