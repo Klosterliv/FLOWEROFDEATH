@@ -39,13 +39,13 @@ public class Wind : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        windTexture = new Texture2D(1000, 1);
+        windTexture = new Texture2D(100, 100);
 
         Vector4 newWind = new Vector4(wind.x,wind.y,wind.z,windStrength.Evaluate(time));
 
         windNow = wind;
 
-        SimpleWindPreWarm();
+        //SimpleWindPreWarm();
 
         //treeShader.SetGlobalVector("_Wind", wind);
         Shader.SetGlobalVector("_Wind", newWind);
@@ -76,7 +76,7 @@ public class Wind : MonoBehaviour {
         Shader.SetGlobalTexture(WindMapName, windTexture);
         Shader.SetGlobalFloat(WindMapScaleName, WindMapScale);
 
-        SimpleWind();
+        SimpleWind2();
 
         debugRender.renderer.material.SetTexture("_MainTex", windTexture);
 	
@@ -126,4 +126,32 @@ public class Wind : MonoBehaviour {
 
 
     }
+
+    void SimpleWind2() {
+
+        Color tempC = new Color(0, 0, 0, 1);
+
+        for (int i = windTexture.width - 1; i >= 0; i--) {
+
+            for (int ii = windTexture.height - 1; ii >= 0; ii--) {
+
+                tempC.r = Mathf.PerlinNoise(i + Time.time, ii + Time.time);
+                //tempC.g = Mathf.PerlinNoise(i + Time.time + 50, ii + Time.time + 50);
+                //tempC.b = Mathf.PerlinNoise(i + Time.time+1600, ii + Time.time+1600);
+
+                windTexture.SetPixel(i, ii, tempC);
+            }
+                //Debug.Log (i + " " + soundtexture.GetPixel(i-1,0));
+                
+            //soundtexture.Apply();
+        }
+        //float rand = (Random.Range(0f, 5f) + windTexture.GetPixel(2, 0).a) / 2;
+
+        //Color newcolor = new Color(windNow.x, windNow.y, windNow.z, windStrength.Evaluate(time) * windMultiplier); //Debug.Log(newcolor);
+        //windTexture.SetPixel(0, 0, newcolor);
+
+        windTexture.Apply();
+
+    }
+
 }
