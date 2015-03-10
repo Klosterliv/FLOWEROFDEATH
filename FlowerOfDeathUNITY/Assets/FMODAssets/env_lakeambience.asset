@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d70658d4cb44624f81bc7bdc47850b2, type: 3}
+  m_Name: env_lakeambience
+  m_EditorClassIdentifier: 
+  path: event:/env_lakeambience
+  id: '{931aee8b-5a58-47e2-8a9f-44d7203d5689}'
