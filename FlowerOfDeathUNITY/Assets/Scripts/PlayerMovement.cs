@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour {
 
     PhysicMaterial playerPhysisMaterial;
 
-    bool grounded = true;
     bool glide = false;
     float jumpcd = 0f;
 
@@ -227,6 +226,8 @@ public class PlayerMovement : MonoBehaviour {
         if (lefthit.distance < minDist) minDist = lefthit.distance;
         if (righthit.distance < minDist) minDist = righthit.distance;
 
+        if (minDist == 0 || minDist > 500) minDist = 500f;
+
         //Vector3 upDir, frontdir;
         /*
         upDir = (Vector3.Cross(backhit.point - Vector3.up, fronthit.point - Vector3.up)).normalized;
@@ -284,6 +285,10 @@ public class PlayerMovement : MonoBehaviour {
 
     public Vector3 GetUpDir() {
         return upDir;
+    }
+
+    public float GetMinDist() {
+        return minDist;
     }
 
 }

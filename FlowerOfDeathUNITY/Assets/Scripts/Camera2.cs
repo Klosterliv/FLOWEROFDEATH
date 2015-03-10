@@ -6,6 +6,10 @@ public class Camera2 : MonoBehaviour {
     public Color debugColor;
 
     public AnimationCurve shakeBySpeed;
+
+    public AnimationCurve forceCameraToSlopeByGroundDist;
+    public float forceCamRate = 5;
+
     public float shakeSpeed;
     public float shakeMultiplier;
 
@@ -37,6 +41,7 @@ public class Camera2 : MonoBehaviour {
     public float y = 0;
 
     float yMinNow;
+    float yMinThisFrame;
     Vector3 realPos;
 
     float speed;
@@ -47,7 +52,7 @@ public class Camera2 : MonoBehaviour {
 
         speed = target.rigidbody.velocity.magnitude;
 
-        yMinNow = yMin;
+        yMinNow = yMin; yMinThisFrame = yMinNow;
         targetPos = new Vector3(0, 0, 0); targetPos = transform.position;
         realPos = new Vector3(0, 0, 0); realPos = transform.position;
 
@@ -83,12 +88,13 @@ public class Camera2 : MonoBehaviour {
         Vector3 angle = Vector3.Cross(playerMovement.GetCameraDir(), playerMovement.GetUpDir());
 
         angle = Vector3.Cross(playerMovement.GetUpDir(), angle);
-
-        Debug.DrawRay(target.position, angle * 10, Color.red);
+        float gdist = playerMovement.GetMinDist();
 
         float slope = 90 - Vector3.Angle(angle, Vector3.up);
-        if (yMin < slope) yMinNow = slope;
+        if (yMin < slope) yMinNow = Mathf.Lerp(yMin, slope, forceCameraToSlopeByGroundDist.Evaluate(gdist));
         else yMinNow = yMin;
+
+        yMinThisFrame = Mathf.Lerp(yMinThisFrame, yMinNow, Time.deltaTime * forceCamRate);
 
     }
 
@@ -97,7 +103,7 @@ public class Camera2 : MonoBehaviour {
         x += Input.GetAxis(XInput) * xSpeed * distance * 0.02f;
         y -= Input.GetAxis(YInput) * ySpeed * 0.02f;
 
-        y = ClampAngle(y, yMinNow, yMax);
+        y = ClampAngle(y, yMinThisFrame, yMax);
 
 
         Quaternion rotation = Quaternion.Euler(y, x, 0);
