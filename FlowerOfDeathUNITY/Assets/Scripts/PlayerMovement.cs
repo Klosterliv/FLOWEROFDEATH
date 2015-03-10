@@ -278,9 +278,12 @@ public class PlayerMovement : MonoBehaviour {
         cameraDir = camDir;
         
     }
+    public Vector3 GetCameraDir() {
+        return cameraDir;
+    }
 
     public Vector3 GetUpDir() {
-        return Vector3.zero;
+        return upDir;
     }
 
 }

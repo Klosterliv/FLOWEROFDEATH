@@ -4,7 +4,6 @@ using System.Collections;
 [AddComponentMenu("Camera-Control/Mouse Orbit with zoom")]
 public class MouseOrbitImproved : MonoBehaviour
 {
-
     public string XInput = "Mouse X", YInput = "Mouse Y";
     public bool reduceAlphaWhenClose;
     public float reduceAlphaStartDistance, reduceAlphaEndDistance;
@@ -103,18 +102,23 @@ public class MouseOrbitImproved : MonoBehaviour
                 //Debug.Log(gdist);
             }
 
-            distance = Mathf.Clamp(distance, distanceMin, distanceMax);
+            distance = Mathf.Clamp(distance-0.3f, distanceMin, distanceMax);
             //Debug.Log(distance);
 
 
            // Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
-            Vector3 negDistance = new Vector3(0.0f, 1f, -distance+1f);
-            Vector3 position = rotation * negDistance + target.position /*+ Vector3.up*gdist + targetOffset*/;
+            Vector3 negDistance = new Vector3(0.0f, 0.1f, -distance);
+            Vector3 position = rotation * negDistance + target.position + Vector3.up /** gdist + targetOffset*/;
 
             //transform.rotation = rotation;
             //transform.position = position;
 
             transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * camRotSpeed);
+
+
+            //Debug.DrawRay(target.position, rotation * -Vector3.forward * 5, Color.black, 5f);
+
+
             targetPos = Vector3.Lerp(targetPos, position, Time.deltaTime * camMoveSpeed);
 
             // CAM SHAKE etc
@@ -143,7 +147,7 @@ public class MouseOrbitImproved : MonoBehaviour
             FeedCameraDir();
             ApplyAlphaWhenClose();
 
-            CheckClipping();
+            //CheckClipping();
 
         }
 
@@ -251,8 +255,6 @@ public class MouseOrbitImproved : MonoBehaviour
                 Color newAlpha = mat.GetColor(alphaNameInShader);
                 newAlpha.a = a;
                 mat.SetColor(alphaNameInShader, newAlpha);
-
-                Debug.Log("newA:" + a + " , ");
             }
             else {
                 float newAlpha = a;
