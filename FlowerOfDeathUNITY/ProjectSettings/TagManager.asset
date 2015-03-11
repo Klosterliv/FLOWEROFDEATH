@@ -15,7 +15,7 @@ TagManager:
   User Layer 8: Player
   User Layer 9: Camera
   User Layer 10: Terrain
-  User Layer 11: Trees
+  User Layer 11: PassThroughTerrain
   User Layer 12: 
   User Layer 13: 
   User Layer 14: 
