@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3368532}
   - 23: {fileID: 2368532}
   - 95: {fileID: 9568532}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plant_02(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 468534}
   - 205: {fileID: 20568532}
   - 114: {fileID: 11446810}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plant_02_Lod
   m_TagString: Untagged
   m_Icon: {fileID: 0}

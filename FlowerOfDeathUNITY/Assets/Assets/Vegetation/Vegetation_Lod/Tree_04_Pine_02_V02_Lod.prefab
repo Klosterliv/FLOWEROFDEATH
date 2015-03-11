@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 457338}
   - 205: {fileID: 20557346}
   - 136: {fileID: 13657346}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_04_Pine_02_V02_Lod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 457340}
   - 95: {fileID: 9557346}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_4_Pin_2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - 4: {fileID: 457342}
   - 33: {fileID: 3357344}
   - 23: {fileID: 2357344}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: polySurface259
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - 4: {fileID: 457344}
   - 33: {fileID: 3357346}
   - 23: {fileID: 2357346}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: polySurface260
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 457346}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: transform47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - 33: {fileID: 3399056}
   - 23: {fileID: 2399056}
   - 95: {fileID: 9599056}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_4_Pin_2_v2_LOD_1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - 33: {fileID: 3399058}
   - 23: {fileID: 2399058}
   - 95: {fileID: 9599058}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_4_Pin_2_v2_LOD_2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

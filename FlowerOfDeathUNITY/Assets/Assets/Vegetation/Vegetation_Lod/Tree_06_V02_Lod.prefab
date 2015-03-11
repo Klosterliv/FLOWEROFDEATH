@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3301692}
   - 23: {fileID: 2301692}
   - 95: {fileID: 9501692}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: tree_6_v2_lod2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3301694}
   - 23: {fileID: 2301694}
   - 95: {fileID: 9501694}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: tree_6_v2_lod1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - 4: {fileID: 409992}
   - 205: {fileID: 20509994}
   - 136: {fileID: 13609994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_06_V02_Lod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - 33: {fileID: 3309994}
   - 23: {fileID: 2309994}
   - 95: {fileID: 9509994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_6_v2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

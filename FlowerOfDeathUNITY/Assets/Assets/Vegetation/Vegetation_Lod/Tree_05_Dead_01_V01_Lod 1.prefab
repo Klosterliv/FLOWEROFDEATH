@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 473402}
   - 205: {fileID: 20573404}
   - 136: {fileID: 13673404}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_05_Dead_01_V01_Lod 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 33: {fileID: 3373404}
   - 23: {fileID: 2373404}
   - 95: {fileID: 9573404}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_5_Dead(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - 33: {fileID: 3374504}
   - 23: {fileID: 2374504}
   - 95: {fileID: 9574504}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_5_Dead(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - 33: {fileID: 3374506}
   - 23: {fileID: 2374506}
   - 95: {fileID: 9574506}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_5_Dead_LOD_1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - 33: {fileID: 3374508}
   - 23: {fileID: 2374508}
   - 95: {fileID: 9574508}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_5_Dead_LOD_2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - 33: {fileID: 3389178}
   - 23: {fileID: 2389178}
   - 95: {fileID: 9589178}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_5_Dead_LOD_1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - 33: {fileID: 3389180}
   - 23: {fileID: 2389180}
   - 95: {fileID: 9589180}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_5_Dead_LOD_2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
