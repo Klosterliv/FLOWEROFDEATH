@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
     public float maxSpeed = 10f;
 
     public LayerMask footinglayers;
+    public LayerMask caveFooting;
 
     public float movespeed;
     public float jumpforce;
@@ -36,6 +37,8 @@ public class PlayerMovement : MonoBehaviour {
     Vector3 dir;
     Vector3 glidetilt;
 
+    bool inCave = false;
+    float timeGliding = 0;
 
     //SOUND
 
@@ -91,7 +94,7 @@ public class PlayerMovement : MonoBehaviour {
 
 
         if (glide) {
-            playerModel.rotation = Quaternion.Slerp(playerModel.rotation, Quaternion.LookRotation(looktarget/*, -glidetilt*/), Time.deltaTime * player.rigidbody.velocity.magnitude);
+            playerModel.rotation = Quaternion.Slerp(playerModel.rotation, Quaternion.LookRotation(looktarget/*, -glidetilt*/), Time.deltaTime * player.rigidbody.velocity.magnitude * timeGliding);
 
         }
         else {
@@ -192,14 +195,13 @@ public class PlayerMovement : MonoBehaviour {
 
     void Glide() {
         if (Input.GetButton("Glide")) {
-            player.renderer.material.color = Color.red;
+            timeGliding += Time.deltaTime;
             player.collider.material = glidematerial;
-            Sound();
             glide = true;
 
         }
         else {
-            player.renderer.material.color = Color.green;
+            timeGliding = 0;
             player.collider.material = runmaterial;
             glide = false;
         }
@@ -209,16 +211,20 @@ public class PlayerMovement : MonoBehaviour {
 
         RaycastHit fronthit, backhit, lefthit, righthit;
 
+        LayerMask footing;
+        if (inCave) footing = caveFooting;
+        else footing = footinglayers;
+
         //Physics.Raycast(player.position - (player.forward * 0.2f) + Vector3.up, )
 
         Ray ray = new Ray(player.position - (player.forward * 0.2f) + Vector3.up, Vector3.down);
-        Physics.Raycast(ray, out fronthit, 1000f, footinglayers);
+        Physics.Raycast(ray, out fronthit, 1000f, footing);
         ray = new Ray(player.position + (player.forward * 0.2f) + Vector3.up, Vector3.down);
-        Physics.Raycast(ray, out backhit, 1000f, footinglayers);
+        Physics.Raycast(ray, out backhit, 1000f, footing);
         ray = new Ray(player.position + (player.right * 0.2f) + Vector3.up, Vector3.down);
-        Physics.Raycast(ray, out righthit, 1000f, footinglayers);
+        Physics.Raycast(ray, out righthit, 1000f, footing);
         ray = new Ray(player.position - (player.right * 0.2f) + Vector3.up, Vector3.down);
-        Physics.Raycast(ray, out lefthit, 1000f, footinglayers);
+        Physics.Raycast(ray, out lefthit, 1000f, footing);
 
         /*
         Physics.Raycast(player.position - (player.forward * 0.2f) + Vector3.up, Vector3.down, out fronthit, footinglayers);
@@ -299,8 +305,12 @@ public class PlayerMovement : MonoBehaviour {
         return minDist;
     }
 
+    public void SetInCave(bool yesno) {
+        inCave = yesno;
+    }
+
     void Sound() {
-        FMOD_StudioSystem.instance.PlayOneShot(glideloop, transform.position, 1f);
+        //FMOD_StudioSystem.instance.PlayOneShot(glideloop, transform.position, 1f);
     }
 
 }
