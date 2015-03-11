@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3311922}
   - 23: {fileID: 2311922}
   - 95: {fileID: 9511922}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Stone_03(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 411924}
   - 205: {fileID: 20511922}
   - 64: {fileID: 6445520}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Stone_03_Lod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - 33: {fileID: 3333578}
   - 23: {fileID: 2333578}
   - 95: {fileID: 9533578}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Stone_03_Lod_1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - 33: {fileID: 3333580}
   - 23: {fileID: 2333580}
   - 95: {fileID: 9533580}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Stone_03_Lod_2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 511.578796, y: 352.099518, z: 170.559158}
+  m_LocalPosition: {x: 536.455994, y: 350.574615, z: 135.315353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 411922}
@@ -215,7 +215,7 @@ MeshCollider:
   serializedVersion: 2
   m_SmoothSphereCollisions: 0
   m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: 1bfdb7303447f9647ad87558d1f7cbbf, type: 3}
+  m_Mesh: {fileID: 4300000, guid: eff11d12772bc4a4f97637bc5568dcc1, type: 3}
 --- !u!95 &9511922
 Animator:
   serializedVersion: 3

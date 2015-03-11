@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3325530}
   - 23: {fileID: 2325530}
   - 95: {fileID: 9525530}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pine_Tree_01_v1_LOD_ 2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3333952}
   - 23: {fileID: 2333952}
   - 95: {fileID: 9533952}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pine_Tree_01_v1_LOD_ 1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - 33: {fileID: 3379714}
   - 23: {fileID: 2379714}
   - 95: {fileID: 9579714}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pine_Tree_01_v1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - 4: {fileID: 479716}
   - 205: {fileID: 20579714}
   - 136: {fileID: 13679714}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_03_Pine_01_V01_Lod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - 33: {fileID: 3390142}
   - 23: {fileID: 2390142}
   - 95: {fileID: 9590142}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pine_Tree_01_v1_LOD_ 1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - 33: {fileID: 3390144}
   - 23: {fileID: 2390144}
   - 95: {fileID: 9590144}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pine_Tree_01_v1_LOD_ 2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 264.778412, y: 458.227722, z: 1754.51221}
+  m_LocalPosition: {x: 815.990723, y: 211.18396, z: 570.008118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479714}

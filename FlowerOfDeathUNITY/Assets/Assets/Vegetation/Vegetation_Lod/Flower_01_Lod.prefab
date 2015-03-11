@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 477152}
   - 205: {fileID: 20577154}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Flower_01_Lod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 33: {fileID: 3377154}
   - 23: {fileID: 2377154}
   - 95: {fileID: 9577154}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Flower_01(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

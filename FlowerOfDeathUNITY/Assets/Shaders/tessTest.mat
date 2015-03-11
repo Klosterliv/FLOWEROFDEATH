@@ -29,14 +29,7 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Splat3
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Splat2
+          name: _Splat0
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -50,7 +43,21 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Splat0
+          name: _Splat2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Splat3
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WindMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -76,26 +83,15 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+    m_Floats:
       data:
         first:
-          name: _WindMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
+          name: _Offset
+        second: .400000006
       data:
         first:
           name: _Fresnel
         second: 1.95000005
-      data:
-        first:
-          name: _Tesselation
-        second: 55
-      data:
-        first:
-          name: _Offset
-        second: .100000001
       data:
         first:
           name: _distExp
@@ -108,6 +104,10 @@ Material:
         first:
           name: _WindTest
         second: 1.07000005
+      data:
+        first:
+          name: _Tesselation
+        second: 55
     m_Colors:
       data:
         first:
@@ -115,12 +115,12 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _Color1
-        second: {r: .230000004, g: 0, b: -.0399999991, a: 1}
-      data:
-        first:
           name: _Color2
         second: {r: .600000024, g: 4.48999977, b: .587424099, a: 1}
+      data:
+        first:
+          name: _Color1
+        second: {r: .230000004, g: 0, b: -.0399999991, a: 1}
       data:
         first:
           name: _TestVector

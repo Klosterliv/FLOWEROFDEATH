@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3323968}
   - 23: {fileID: 2323968}
   - 95: {fileID: 9523968}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tree_7_Fallen_01(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 423970}
   - 205: {fileID: 20523968}
   - 136: {fileID: 13623968}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fallen_Tree_01_Lod
   m_TagString: Untagged
   m_Icon: {fileID: 0}

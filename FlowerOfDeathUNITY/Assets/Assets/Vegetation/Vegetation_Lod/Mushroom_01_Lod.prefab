@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442976}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: transform48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   - 4: {fileID: 442978}
   - 33: {fileID: 3342976}
   - 23: {fileID: 2342976}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: polySurface272
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - 4: {fileID: 442980}
   - 33: {fileID: 3342978}
   - 23: {fileID: 2342978}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: polySurface271
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 442982}
   - 95: {fileID: 9542976}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mushroom_1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - 33: {fileID: 3342980}
   - 23: {fileID: 2342980}
   - 95: {fileID: 9542978}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mushroom_1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - 4: {fileID: 442986}
   - 205: {fileID: 20542976}
   - 114: {fileID: 11448460}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mushroom_01_Lod
   m_TagString: Untagged
   m_Icon: {fileID: 0}

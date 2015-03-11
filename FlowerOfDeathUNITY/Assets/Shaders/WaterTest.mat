@@ -34,12 +34,12 @@ Material:
         second: .5
       data:
         first:
-          name: _DepthBlend
-        second: 2.9000001
-      data:
-        first:
           name: _Fresnel
         second: 14.6700001
+      data:
+        first:
+          name: _DepthBlend
+        second: 4
     m_Colors:
       data:
         first:
