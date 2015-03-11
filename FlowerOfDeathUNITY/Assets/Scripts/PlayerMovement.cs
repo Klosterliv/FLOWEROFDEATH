@@ -36,6 +36,11 @@ public class PlayerMovement : MonoBehaviour {
     Vector3 dir;
     Vector3 glidetilt;
 
+
+    //SOUND
+
+    string glideloop = "event:/cha_step";
+
     // Use this for initialization
     void Start() {
         upDir = new Vector3(0, 0, 0);
@@ -56,6 +61,8 @@ public class PlayerMovement : MonoBehaviour {
         Footing();
         Jump();
         Glide();
+
+        //Sound();
 
     }
     void FixedUpdate() {
@@ -187,6 +194,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetButton("Glide")) {
             player.renderer.material.color = Color.red;
             player.collider.material = glidematerial;
+            Sound();
             glide = true;
 
         }
@@ -289,6 +297,10 @@ public class PlayerMovement : MonoBehaviour {
 
     public float GetMinDist() {
         return minDist;
+    }
+
+    void Sound() {
+        FMOD_StudioSystem.instance.PlayOneShot(glideloop, transform.position, 1f);
     }
 
 }
