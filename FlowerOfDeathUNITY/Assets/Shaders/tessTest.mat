@@ -87,7 +87,7 @@ Material:
       data:
         first:
           name: _Offset
-        second: .400000006
+        second: .25
       data:
         first:
           name: _Fresnel
@@ -112,15 +112,15 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .623989463, g: .201719299, b: .669117689, a: 1}
       data:
         first:
           name: _Color2
-        second: {r: .600000024, g: 4.48999977, b: .587424099, a: 1}
+        second: {r: 1.82000005, g: 3.77999997, b: 9, a: 13.7799997}
       data:
         first:
           name: _Color1
-        second: {r: .230000004, g: 0, b: -.0399999991, a: 1}
+        second: {r: -0, g: 0, b: 7, a: 1}
       data:
         first:
           name: _TestVector
