@@ -86,8 +86,16 @@ Material:
     m_Floats:
       data:
         first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: _Tesselation
+        second: 55
+      data:
+        first:
           name: _Offset
-        second: .400000006
+        second: .25999999
       data:
         first:
           name: _Fresnel
@@ -104,10 +112,6 @@ Material:
         first:
           name: _WindTest
         second: 1.07000005
-      data:
-        first:
-          name: _Tesselation
-        second: 55
     m_Colors:
       data:
         first:
