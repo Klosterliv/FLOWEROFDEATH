@@ -18,6 +18,13 @@ ModelImporter:
     100024: LoD_Tree_1:polySurface240
     100026: LoD_Tree_1:polySurface241
     100028: LoD_Tree_1:polySurface242
+    100030: polySurface231
+    100032: polySurface255
+    100034: polySurface256
+    100036: polySurface257
+    100038: polySurface258
+    100040: polySurface259
+    100042: polySurface260
     400000: polySurface221
     400002: polySurface237
     400004: polySurface238
@@ -33,6 +40,13 @@ ModelImporter:
     400024: LoD_Tree_1:polySurface240
     400026: LoD_Tree_1:polySurface241
     400028: LoD_Tree_1:polySurface242
+    400030: polySurface231
+    400032: polySurface255
+    400034: polySurface256
+    400036: polySurface257
+    400038: polySurface258
+    400040: polySurface259
+    400042: polySurface260
     2300000: polySurface237
     2300002: polySurface238
     2300004: polySurface239
@@ -45,6 +59,12 @@ ModelImporter:
     2300018: LoD_Tree_1:polySurface240
     2300020: LoD_Tree_1:polySurface241
     2300022: LoD_Tree_1:polySurface242
+    2300024: polySurface255
+    2300026: polySurface256
+    2300028: polySurface257
+    2300030: polySurface258
+    2300032: polySurface259
+    2300034: polySurface260
     3300000: polySurface237
     3300002: polySurface238
     3300004: polySurface239
@@ -57,6 +77,12 @@ ModelImporter:
     3300018: LoD_Tree_1:polySurface240
     3300020: LoD_Tree_1:polySurface241
     3300022: LoD_Tree_1:polySurface242
+    3300024: polySurface255
+    3300026: polySurface256
+    3300028: polySurface257
+    3300030: polySurface258
+    3300032: polySurface259
+    3300034: polySurface260
     4300000: polySurface237
     4300002: polySurface238
     4300004: polySurface239
@@ -69,6 +95,12 @@ ModelImporter:
     4300018: LoD_Tree_1:polySurface240
     4300020: LoD_Tree_1:polySurface241
     4300022: LoD_Tree_1:polySurface242
+    4300024: polySurface255
+    4300026: polySurface256
+    4300028: polySurface257
+    4300030: polySurface258
+    4300032: polySurface259
+    4300034: polySurface260
     9500000: //RootNode
   materials:
     importMaterials: 1
