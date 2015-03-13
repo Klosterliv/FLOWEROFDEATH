@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Wind : MonoBehaviour {
 
+    public Transform player;
+
     public Texture2D mask1;
     public Texture2D mask2;
 
@@ -23,7 +25,7 @@ public class Wind : MonoBehaviour {
 
     public Shader treeShader;
 
-    float time = 0;
+    float time = 1;
     public float timeFactor = 1f;
     //float lerptime
 
@@ -32,18 +34,34 @@ public class Wind : MonoBehaviour {
 
     public GameObject debugRender;
 
+    [Header("Wind Settings")]
     public string WindMapName = "_WindMap";
     public string WindMapScaleName = "_WindMapScale";
     public float WindMapScale = 1000f;
+    public int WindMapResolutionX, WindMapResolutionY;
+    public float noiseScale = 0.05f;
+    public string PlayerWindName = "_PlayerWind";
+    public string PlayerPosName = "_PlayerPos";
+
+    Color[,] windMapData;
+    Color[,] playerWindData;
+    int playerWindRes = 8;
+    Texture2D playerWind;
 
 	// Use this for initialization
 	void Start () {
 
-        windTexture = new Texture2D(100, 100);
+        windMapData = new Color[WindMapResolutionX,WindMapResolutionY];
+        playerWindData = new Color[playerWindRes, playerWindRes];
+
+        playerWind = new Texture2D(playerWindRes, playerWindRes);
+        windTexture = new Texture2D(WindMapResolutionX, WindMapResolutionY);
 
         Vector4 newWind = new Vector4(wind.x,wind.y,wind.z,windStrength.Evaluate(time));
 
         windNow = wind;
+
+        WindPreWarm();
 
         //SimpleWindPreWarm();
 
@@ -76,9 +94,10 @@ public class Wind : MonoBehaviour {
         Shader.SetGlobalTexture(WindMapName, windTexture);
         Shader.SetGlobalFloat(WindMapScaleName, WindMapScale);
 
-        SimpleWind2();
-
-        debugRender.renderer.material.SetTexture("_MainTex", windTexture);
+        
+        WindUpdate();
+        PlayerWind();
+        debugRender.renderer.material.SetTexture("_MainTex", playerWind);
 	
         
 	}
@@ -151,6 +170,82 @@ public class Wind : MonoBehaviour {
         //windTexture.SetPixel(0, 0, newcolor);
 
         windTexture.Apply();
+
+    }
+
+    void WindPreWarm() {
+        Color tempC = new Color(0,0,0);
+        //float time = Time.time+1;
+
+        time = 0.1f;
+
+        for (int x = WindMapResolutionX - 1; x >= 0; x--) {
+            float xc = x*noiseScale;
+            for (int y = WindMapResolutionY - 1; y >= 0; y--) {
+                tempC.r = Mathf.PerlinNoise(time + xc, time + y*noiseScale);
+                //Debug.Log(Mathf.PerlinNoise(time + x, time+y));
+                windMapData[x, y] = tempC;
+
+                windTexture.SetPixel(x, y, windMapData[x, y]);
+
+            }
+        }
+        windTexture.Apply();
+    }
+
+    void WindUpdate() {
+        
+        Color tempC = new Color(0,0,0);
+        for (int y = WindMapResolutionY -1; y >= 0; y--) {
+            tempC.r = Mathf.PerlinNoise(0, Time.time + y*noiseScale);
+            //tempC.g = Mathf.PerlinNoise(0, Time.time+5 + y * noiseScale);
+            tempC.b = Mathf.PerlinNoise(0, Time.time+10 + y * noiseScale);
+
+            windMapData[0,y] = tempC;
+        }
+
+        for (int x = WindMapResolutionX - 1; x > 0; x--) {
+            for (int y = WindMapResolutionY - 1; y >= 0; y--) {
+                windMapData[x, y] = windMapData[x - 1, y];
+                windTexture.SetPixel(x, y, windMapData[x, y]);
+
+            }
+        }
+        /*
+        Color tempC = new Color(0, 0, 0);
+        for (int x = WindMapResolutionX - 1; x >= 0; x--) {
+            for (int y = WindMapResolutionY - 1; y >= 0; y--) {
+
+                tempC.r = Mathf.PerlinNoise(Time.time + x * noiseScale, y*noiseScale);
+                windMapData[x, y] = tempC;
+                windTexture.SetPixel(x, y, windMapData[x, y]);
+
+            }
+        }*/
+
+        windTexture.Apply();
+    }
+
+    void PlayerWind() {
+
+        Vector4 ppos = new Vector4(player.position.x, player.position.y, player.position.z, 0);
+
+        for (int x = playerWindRes - 1; x >= 0; x--) {
+            for (int y = playerWindRes - 1; y >= 0; y--) {
+                playerWindData[x, y] = Color.black;
+
+                playerWind.SetPixel(x, y, playerWindData[x, y]);
+            }
+        }
+
+        int coord = playerWindRes / 2;
+        playerWindData[coord, coord] = Color.red;
+        playerWind.SetPixel(coord, coord, playerWindData[coord, coord]);
+
+        playerWind.Apply();
+
+        Shader.SetGlobalVector(PlayerPosName, ppos);
+        Shader.SetGlobalTexture(PlayerWindName, playerWind);
 
     }
 
