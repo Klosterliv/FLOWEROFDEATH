@@ -8,7 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: tessTest
   m_Shader: {fileID: 4800000, guid: 20b2c53a5daf633439dcef3f3afa22b6, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords:
+  - _TEST_ON
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -83,6 +84,13 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _LastSplat
+        second:
+          m_Texture: {fileID: 2800000, guid: c21e1d3c7015f0d4fb28cf936171e9b7, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -90,16 +98,12 @@ Material:
         second: .5
       data:
         first:
-          name: _Tesselation
-        second: 55
-      data:
-        first:
           name: _Offset
-        second: .25999999
+        second: .300000012
       data:
         first:
           name: _Fresnel
-        second: 1.95000005
+        second: 1.89999998
       data:
         first:
           name: _distExp
@@ -112,11 +116,35 @@ Material:
         first:
           name: _WindTest
         second: 1.07000005
+      data:
+        first:
+          name: _Tesselation
+        second: 55
+      data:
+        first:
+          name: _test
+        second: 1
+      data:
+        first:
+          name: _node_7780
+        second: 0
+      data:
+        first:
+          name: _node_9759
+        second: 0
+      data:
+        first:
+          name: _lr
+        second: .819999993
+      data:
+        first:
+          name: _tr
+        second: 4
     m_Colors:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _Color2

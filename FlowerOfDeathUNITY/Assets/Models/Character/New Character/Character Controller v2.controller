@@ -112,14 +112,14 @@ BlendTree:
     m_CycleOffset: 0
     m_IsAnim: 1
     m_Mirror: 0
-  - m_Motion: {fileID: 7400000, guid: 2f0ac9930142a9c4cac64daed882114b, type: 3}
+  - m_Motion: {fileID: 7400000, guid: 1a51eb88615ba2e4fbcc89bf3259e5ec, type: 3}
     m_Threshold: 3
     m_Position: {x: 0, y: 0}
     m_TimeScale: .5
     m_CycleOffset: 0
     m_IsAnim: 1
     m_Mirror: 0
-  - m_Motion: {fileID: 7400000, guid: 2f0ac9930142a9c4cac64daed882114b, type: 3}
+  - m_Motion: {fileID: 7400000, guid: 1a51eb88615ba2e4fbcc89bf3259e5ec, type: 3}
     m_Threshold: 15
     m_Position: {x: 0, y: 0}
     m_TimeScale: 2
@@ -261,7 +261,7 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110218696}
   m_DstState: {fileID: 110240494}
-  m_TransitionDuration: .0324442908
+  m_TransitionDuration: .0869049132
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 3
@@ -276,7 +276,7 @@ Transition:
     m_ConditionEvent: groundDist
     m_EventTreshold: .200000003
     m_ExitTime: .727272749
-  m_Atomic: 1
+  m_Atomic: 0
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
@@ -360,7 +360,7 @@ Transition:
     m_ConditionEvent: gliding
     m_EventTreshold: 0
     m_ExitTime: .769230783
-  m_Atomic: 1
+  m_Atomic: 0
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
@@ -505,7 +505,7 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110240494}
   m_DstState: {fileID: 110218696}
-  m_TransitionDuration: .272727281
+  m_TransitionDuration: .0794113204
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 2
@@ -516,7 +516,7 @@ Transition:
     m_ConditionEvent: speed
     m_EventTreshold: .200000003
     m_ExitTime: .727272749
-  m_Atomic: 1
+  m_Atomic: 0
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
@@ -571,7 +571,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Idle
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: a14ebe84c10352d43b303df31b46e05f, type: 3}
