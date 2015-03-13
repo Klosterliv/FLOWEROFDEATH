@@ -98,8 +98,12 @@ Material:
         second: .5
       data:
         first:
+          name: _Tesselation
+        second: 55
+      data:
+        first:
           name: _Offset
-        second: .300000012
+        second: .25
       data:
         first:
           name: _Fresnel
@@ -118,8 +122,12 @@ Material:
         second: 1.07000005
       data:
         first:
-          name: _Tesselation
-        second: 55
+          name: _lr
+        second: 4
+      data:
+        first:
+          name: _tr
+        second: .75
       data:
         first:
           name: _test
@@ -132,14 +140,6 @@ Material:
         first:
           name: _node_9759
         second: 0
-      data:
-        first:
-          name: _lr
-        second: .819999993
-      data:
-        first:
-          name: _tr
-        second: 4
     m_Colors:
       data:
         first:

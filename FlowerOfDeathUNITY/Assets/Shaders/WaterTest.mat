@@ -35,11 +35,11 @@ Material:
       data:
         first:
           name: _Fresnel
-        second: 1
+        second: 5.69999981
       data:
         first:
           name: _DepthBlend
-        second: 12.8000002
+        second: 14.9799995
     m_Colors:
       data:
         first:
