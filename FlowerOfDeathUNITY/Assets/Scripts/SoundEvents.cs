@@ -16,6 +16,6 @@ public class SoundEvents : MonoBehaviour {
 	}
 
     public void Step(float val) {
-        FMOD_StudioSystem.instance.PlayOneShot(stepsound, transform.position, 0.2f);
+        FMOD_StudioSystem.instance.PlayOneShot(stepsound, transform.position, 0.12f);
     }
 }
