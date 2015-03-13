@@ -99,7 +99,7 @@ Material:
       data:
         first:
           name: _Offset
-        second: .300000012
+        second: 1
       data:
         first:
           name: _Fresnel

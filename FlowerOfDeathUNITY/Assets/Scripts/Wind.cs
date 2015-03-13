@@ -42,11 +42,14 @@ public class Wind : MonoBehaviour {
     public float noiseScale = 0.05f;
     public string PlayerWindName = "_PlayerWind";
     public string PlayerPosName = "_PlayerPos";
+    public string PlayerScaleName = "_PlayerWindScale";
 
     Color[,] windMapData;
     Color[,] playerWindData;
-    int playerWindRes = 8;
+    public int playerWindRes = 8;
+    public float playerWindScale = 100f;
     Texture2D playerWind;
+    public Texture2D playerWindBase;
 
 	// Use this for initialization
 	void Start () {
@@ -245,7 +248,8 @@ public class Wind : MonoBehaviour {
         playerWind.Apply();
 
         Shader.SetGlobalVector(PlayerPosName, ppos);
-        Shader.SetGlobalTexture(PlayerWindName, playerWind);
+        Shader.SetGlobalTexture(PlayerWindName, playerWindBase);
+        Shader.SetGlobalFloat(PlayerScaleName, playerWindScale);
 
     }
 
