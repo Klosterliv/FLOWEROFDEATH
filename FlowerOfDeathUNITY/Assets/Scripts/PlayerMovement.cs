@@ -41,11 +41,19 @@ public class PlayerMovement : MonoBehaviour {
     float timeGliding = 0;
 
     //SOUND
+    bool speedLoopOn = false;
+    FMOD.Studio.EventInstance glideLoop;
+    FMOD.Studio.EventInstance speedLoop;
 
+    FMODAsset jumpsound;
     string glideloop = "event:/cha_step";
 
     // Use this for initialization
     void Start() {
+
+        glideLoop = FMOD_StudioSystem.instance.GetEvent("event:/cha_glide");
+        speedLoop = FMOD_StudioSystem.instance.GetEvent("event:/music_speed");
+
         upDir = new Vector3(0, 0, 0);
         animator = (Animator)playerModel.GetComponent(typeof(Animator));
         //playerModel.transform.position = transform.position;
@@ -65,7 +73,7 @@ public class PlayerMovement : MonoBehaviour {
         Jump();
         Glide();
 
-        //Sound();
+        Sound();
 
     }
     void FixedUpdate() {
@@ -195,6 +203,13 @@ public class PlayerMovement : MonoBehaviour {
 
     void Glide() {
         if (Input.GetButton("Glide")) {
+
+            if (!glide) { 
+                glideLoop.start();
+                glideLoop.setVolume(0.2f);
+            }
+
+
             timeGliding += Time.deltaTime;
             player.collider.material = glidematerial;
             glide = true;
@@ -204,6 +219,8 @@ public class PlayerMovement : MonoBehaviour {
             timeGliding = 0;
             player.collider.material = runmaterial;
             glide = false;
+
+            glideLoop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
     }
 
@@ -271,6 +288,8 @@ public class PlayerMovement : MonoBehaviour {
             if (Input.GetButtonDown("Jump") && jumpcd <= 0) {
                 player.rigidbody.AddForce(Vector3.up * jumpforce);
                 jumpcd = jumpcooldown;
+
+                FMOD_StudioSystem.instance.PlayOneShot("event:/cha_jump", player.position, 0.1f);
             }
             floatEngaged = false;
         }
@@ -311,6 +330,24 @@ public class PlayerMovement : MonoBehaviour {
 
     void Sound() {
         //FMOD_StudioSystem.instance.PlayOneShot(glideloop, transform.position, 1f);
+        float speed = rigidbody.velocity.magnitude;
+        if(speedLoopOn) {
+
+            speedLoop.setVolume(1f);
+            speedLoop.setParameterValue("drums", speed);
+
+            if(speed < 5f) { speedLoop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); speedLoopOn = false; }
+        }
+        else if (speed > 5f) {
+
+            speedLoop.setVolume(1);
+            speedLoop.setParameterValue("drums", speed);
+
+            speedLoopOn = true;
+            Debug.Log("play");
+
+            speedLoop.start();
+        }
     }
 
 }
