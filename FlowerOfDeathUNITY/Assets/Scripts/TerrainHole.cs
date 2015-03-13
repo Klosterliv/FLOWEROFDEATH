@@ -6,8 +6,8 @@ public class TerrainHole : MonoBehaviour {
 
     Collider collider;
 
-    public int avoidLayer = 11;
-    public int normalLayer = 8;
+    int avoidLayer = 11;
+    int normalLayer = 8;
 
     List<GameObject> contained;
 
