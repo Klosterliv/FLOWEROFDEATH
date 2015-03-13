@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: tessTest
+  m_Name: tessTestSperringz
   m_Shader: {fileID: 4800000, guid: 20b2c53a5daf633439dcef3f3afa22b6, type: 3}
   m_ShaderKeywords:
   - _TEST_ON
@@ -99,11 +99,11 @@ Material:
       data:
         first:
           name: _Tesselation
-        second: 55
+        second: 54.7999992
       data:
         first:
           name: _Offset
-        second: .25
+        second: .699999988
       data:
         first:
           name: _Fresnel
