@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 439494}
   - 205: {fileID: 20539496}
+  - 64: {fileID: 6423532}
   m_Layer: 11
   m_Name: Fallen_Tree_02_Lod
   m_TagString: Untagged
@@ -41,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1751.02087, y: 228.197876, z: 703.158569}
+  m_LocalPosition: {x: 1285.95923, y: 307.343079, z: 1310.66443}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 439496}
@@ -85,6 +86,19 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139496}
+  m_Mesh: {fileID: 4300000, guid: 3d994771dc8250c48932e895821c77aa, type: 3}
+--- !u!64 &6423532
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 3d994771dc8250c48932e895821c77aa, type: 3}
 --- !u!95 &9539496
 Animator:
