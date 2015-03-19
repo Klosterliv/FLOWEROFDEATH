@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour {
     // Use this for initialization
     void Start() {
 
-        glideLoop = FMOD_StudioSystem.instance.GetEvent("event:/cha_glide");
+        glideLoop = FMOD_StudioSystem.instance.GetEvent("event:/cha_swoosh");
         speedLoop = FMOD_StudioSystem.instance.GetEvent("event:/music_speed");
 
         upDir = new Vector3(0, 0, 0);
@@ -203,11 +203,12 @@ public class PlayerMovement : MonoBehaviour {
 
     void Glide() {
         if (Input.GetButton("Glide")) {
-
+			/*
             if (!glide) { 
                 glideLoop.start();
                 glideLoop.setVolume(0.2f);
             }
+			*/
 
 
             timeGliding += Time.deltaTime;
@@ -220,7 +221,7 @@ public class PlayerMovement : MonoBehaviour {
             player.collider.material = runmaterial;
             glide = false;
 
-            glideLoop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            //glideLoop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
     }
 
@@ -294,7 +295,7 @@ public class PlayerMovement : MonoBehaviour {
             floatEngaged = false;
         }
         else {
-            if (Input.GetButtonDown("Jump")) {
+            if (Input.GetButton("Jump")) {
                 floatEngaged = true;
             }
             if (!Input.GetButton("Jump"))
@@ -333,20 +334,27 @@ public class PlayerMovement : MonoBehaviour {
         float speed = rigidbody.velocity.magnitude;
         if(speedLoopOn) {
 
+			glideLoop.setParameterValue("SwooshSnd", speed/2);
             speedLoop.setVolume(1f);
+			glideLoop.setVolume(0.001f*speed);
             speedLoop.setParameterValue("drums", speed);
 
-            if(speed < 5f) { speedLoop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); speedLoopOn = false; }
+            if(speed < 5f) { 
+				speedLoop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); 
+				speedLoopOn = false; 
+				glideLoop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+			}
         }
         else if (speed > 5f) {
 
             speedLoop.setVolume(1);
-            speedLoop.setParameterValue("drums", speed);
+            speedLoop.setParameterValue("drums", speed/2);
 
             speedLoopOn = true;
             Debug.Log("play");
 
             speedLoop.start();
+			glideLoop.start ();
         }
     }
 
