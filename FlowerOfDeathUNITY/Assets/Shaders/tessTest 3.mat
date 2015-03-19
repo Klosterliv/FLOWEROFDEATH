@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: tessTest 3
+  m_Shader: {fileID: 4800000, guid: 20b2c53a5daf633439dcef3f3afa22b6, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c21e1d3c7015f0d4fb28cf936171e9b7, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Control
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Splat0
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Splat1
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Splat2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Splat3
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WindMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Diffuse
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Displacement
+        second:
+          m_Texture: {fileID: 2800000, guid: c21e1d3c7015f0d4fb28cf936171e9b7, type: 3}
+          m_Scale: {x: 100, y: 100}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: __Splat0
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _LastSplat
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: _Tesselation
+        second: 8
+      data:
+        first:
+          name: _Offset
+        second: 1.34000003
+      data:
+        first:
+          name: _Fresnel
+        second: 1.95000005
+      data:
+        first:
+          name: _distExp
+        second: 5
+      data:
+        first:
+          name: _FallOffStart
+        second: 50
+      data:
+        first:
+          name: _WindTest
+        second: 1
+      data:
+        first:
+          name: _lr
+        second: 0
+      data:
+        first:
+          name: _tr
+        second: 0
+      data:
+        first:
+          name: _minTess
+        second: 0
+      data:
+        first:
+          name: _maxTess
+        second: 80
+      data:
+        first:
+          name: _maxdist
+        second: 150
+      data:
+        first:
+          name: _maxDistTess
+        second: 2
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Color2
+        second: {r: .0199999996, g: .100000001, b: 0, a: 0}
+      data:
+        first:
+          name: _Color1
+        second: {r: .00999999978, g: .00999999978, b: .00499999989, a: 1}
+      data:
+        first:
+          name: _TestVector
+        second: {r: 1.89999998, g: 3.75999999, b: -4.26000023, a: .360000014}
